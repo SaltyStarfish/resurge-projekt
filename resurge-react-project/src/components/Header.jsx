@@ -4,7 +4,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav style={{display: "flex"}}>
+      <nav className="mb-2 bg-gray-200 p-4 rounded">
         <p>
           <Link className="linktext" to="/">Forside</Link> 
           &nbsp; | &nbsp;
