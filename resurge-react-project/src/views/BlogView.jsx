@@ -1,0 +1,14 @@
+// import '../App.css'
+
+function BlogView() {
+
+  return (
+    <>
+      <main>
+        <h1>Blog</h1>
+      </main>
+    </>
+  )
+}
+
+export default BlogView
