@@ -1,4 +1,28 @@
+  /* TAILWIND */
 @import "tailwindcss";
+
+  /* import Urbanist font */
+@font-face {
+    font-family: 'Urbanist';
+    src: local('Urbanist Regular'), local('Urbanist-Regular'),
+        url('assets/fonts/subset-Urbanist-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: local('Urbanist Italic'), local('Urbanist-Italic'),
+        url('subset-Urbanist-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* font-classes */
+.urbanist{font-family: 'Urbanist', Verdana, Tahoma, system-ui, sans-serif;}
+.verdana{font-family: Verdana, Tahoma, system-ui, sans-serif;}
 
   /* sikrer at footeren altid er i bunden */
 #root{
