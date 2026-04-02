@@ -1,5 +1,3 @@
-import {link} from "react-router-dom";
-
 export default function Sektion3() {
 
     return (
