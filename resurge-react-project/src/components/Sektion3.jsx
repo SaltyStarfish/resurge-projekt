@@ -1,25 +1,33 @@
-export default function Sektion3() {
-
+export default function Sektion3({
+    blocks = [
+        { imageSrc: "", imageAlt: "", title: "Skræddersyede løsninger", text: "tekst 1", link:"læs mere her", reverse: false },
+        { imageSrc: "", imageAlt: "", title: "Performanceoptimering", text: "tekst 2", reverse: true },
+        { imageSrc: "", imageAlt: "", title: "Reduceret CO2-aftryk", text: "tekst 3", reverse: false, imageSize: "w-[490px] h-[490px]", contentSize: "min-w-[490px]" },
+    ],
+}) {
     return (
-        <div class="3-Partskasse">
-            <sektion class="Boks1"> /*  */
-                <div id="Placeholderimage"></div>"
-                <h2>Skræddersyede løsninger</h2>
-                <p>Alt for mange bureauer arbejder med tunge løsninger, som ikke er tilpasset den enkelte virksomhed. Som indsamler data, der aldrig bliver brugt, men kun fylder og bruger strøm. Eller udliciterer webproduktionen til andre lande, hvor du mister kontrollen og overblikket. Den tendens vil vi gøre op med. 
-                    Hos Resurge mener vi, at tingene skal gøres ordentligt - og til en overkommelig pris. Så du har kontrollen hele vejen igennem og får en webløsning, der er tilpasset dine behov - ikke bare en standardpakke. Websitet skal passe til din virksomhed her og nu og kan udvides, når din virksomhed vokser. 
-                </p>
-            </sektion>
-            <section class="Boks2">
-                <h2>Performanceoptimering</h2>
-                <p>Når det overflødige skæres væk, bliver dit website automatisk lettere og performer bedre. Dertil kommer billed-, video- og typografi-optimering, som igen er med til at gøre dit website hurtigere - uden at gå på kompromis med kvaliteten. Vi holder os opdateret på den nyeste teknologi og de bedste værktøjer til at optimere både performance og energiforbrug.</p>
-                <div id="Placeholderimage"></div>
-            </section>
-            
-            <sektion class="Boks1"> /*  */
-                <div id="Placeholderimage"></div>"
-                <h2>Reduceret CO2-aftryk</h2>
-                <p>Klimabevidsthed fylder i arbejdstilgangen hos Resurge, og performance- og CO2-optimering går heldigvis hånd i hånd. Et website vil per definition aldrig blive bæredygtigt, og man siger, at det eneste bæredygtige website er et website, som ikke eksisterer. Med det i mente tror vi, at det mindst bæredygtige website er et website, som ikke opfylder dets formål. Derfor er det vores topprioritet at skabe effektive webløsninger, som skaber værdi for virksomheder og deres kunder. Samtidig arbejder vi aktivt med at gøre websites mindre datatunge for at opnå en bedre brugeroplevelse, højere performance og et mindre CO2-aftryk.</p>
-            </sektion>
+        <div className="parent-container flex justify-center items-center max-w-[1102px] min-w-[1102px] mx-auto my-12 flex-col">
+            {blocks.map((block, index) => (
+                <div
+                    key={index}
+                    className={`child-container flex items-start gap-[110px] min-w-[1102px] mb-8 ${
+                        block.reverse ? "flex-row-reverse" : "flex-row"
+                    }`}
+                >
+                    <div
+                        className={`image-container bg-blue-300 ${block.imageSize || "w-[250px] h-[250px]"} flex items-center justify-center`}
+                    >
+                        {/* Temporary solid color box for image placeholder */}
+                    </div>
+                    <div className={`content-container flex flex-col flex-1 gap-2 ${block.contentSize || "min-w-[694px]"} items-start`}>{/* bruger || for at alve en adskilling, er der ikke nogen størrelser på content array, så  bruger den de values der kommer bagefter */}
+                        <h2 className="text-2xl font-semibold">{block.title}</h2>
+                        <p className="text-base text-gray-700">{block.text}</p>
+                        {block.link && (
+                          <a href={block.link} className="text-blue-600 underline mt-2">Læs mere</a>
+                        )}
+                    </div>
+                </div>
+            ))}
         </div>
- )
+    );
 }
