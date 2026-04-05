@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 //dette er en komponent
-export default function ComponentTemplate() {
+export default function PriceCardSection() {
 
   return (
     <div className="m-2 w-100 border py-2 px-4 rounded verdana">
