@@ -9,8 +9,8 @@ function BlogView() {
     <div className="blog">
       <Container>
         <section className="blog-intro">
-          <h1>Inspiration og guides</h1>
-          <p>Her har vi samlet vores praktiske tips til et hurtigere og mere energieffektivt website</p>
+          <h1 className="urbanist font-medium text-[80px] mb-4">Inspiration og guides</h1>
+          <p className="urbanist font-medium text-[30px] mb-6">Her har vi samlet vores praktiske tips til et hurtigere og mere energieffektivt website</p>
         </section>
       
         <div className="space-y-20">
