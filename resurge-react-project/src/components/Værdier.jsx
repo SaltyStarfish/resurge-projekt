@@ -1,19 +1,19 @@
-import smallPlaceholder from "../assets/images/SmallPlaceholder.png";
-import placeholder from "../assets/images/placeholder.png";
+import infographic2 from "../assets/images/inforgraphic 2 - 2 stack.png";
+import infographic3 from "../assets/images/infographic 3 - long line.png";
 
 export default function Værdier({
 	blocks = [
-		{ title: "Fleksible løsninger", imageSrc: smallPlaceholder, imageAlt: "", text: "tekst 1" },
-		{ title: "Høj performance", imageSrc: smallPlaceholder, imageAlt: "", text: "tekst 2" },
-		{ title: "Mindre klimaaftryk", imageSrc: placeholder, imageAlt: "", text: "tekst 3" },
+		{ title: "vores værdier", imageSrc: infographic2, imageAlt: "" },
+		{ title: "vores grundsøjler", imageSrc: infographic3, imageAlt: "", text: "tekst 2" },
 	],
+
 }) {
 	return (
 		<div className="parent-container w-full max-w-[1102px] mx-auto">
 			{blocks.map((block, index) => (
 				<div key={index} className="child-container w-full flex flex-col items-start">
 					<div className="heading-container w-full text-left">
-						<h2 className="urbanist font-medium text-[20px] md:text-[40px] leading-tight w-full max-w-[694px] text-left">{block.title}</h2>
+						<h2 className="urbanist font-medium text-[60px] leading-tight w-full max-w-[694px] text-left">{block.title}</h2>
 					</div>
 					<div className={`image-container w-full ${block.imageSpacing || "pt-[80px] pb-[40px]"}`}>
 						{block.imageSrc ? (
