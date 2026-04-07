@@ -17,7 +17,7 @@ function BlogView() {
         {/* Blogindlæg 1 */}
           <FiftyFifty>
             <div className="w-full md:w-1/2 flex flex-col justify-center">
-              <img src={placeHolder} alt="Blogindlæg 1" className="w-full max-w-[500px] h-[500px]object-cover" />
+              <img src={placeHolder} alt="Blogindlæg 1" className="w-full max-w-[500px] h-[500px]object-cover mx-auto" />
             </div>
             <div className="w-full md:w-1/2 flex flex-col justify-center">
               <h3 className="urbanist font-medium text-[40px] mb-4">5 tips til at forbedre dit websites performance</h3>
@@ -29,7 +29,7 @@ function BlogView() {
         {/* Blogindlæg 2 */}
         <FiftyFifty reverse>
           <div className="w-full md:w-1/2 flex flex-col justify-center">
-            <img src={placeHolder} alt="Blogindlæg 2" className="w-full max-w-[500px] h-[500px]object-cover" />
+            <img src={placeHolder} alt="Blogindlæg 2" className="w-full max-w-[500px] h-[500px]object-cover mx-auto" />
           </div>
           <div className="w-full md:w-1/2 flex flex-col justify-center">
             <h3 className="urbanist font-medium text-[40px] mb-4">Få mere ud af dit website uden at sprænge budgettet</h3>
@@ -41,7 +41,7 @@ function BlogView() {
         {/* Blogindlæg 3 */}
         <FiftyFifty>
           <div className="w-full md:w-1/2 flex flex-col justify-center">
-            <img src={placeHolder} alt="Blogindlæg 3" className="w-full max-w-[500px] h-[500px]object-cover" />
+            <img src={placeHolder} alt="Blogindlæg 3" className="w-full max-w-[500px] h-[500px]object-cover mx-auto" />
           </div>
           <div className="w-full md:w-1/2 flex flex-col justify-center">
             <h3 className="urbanist font-medium text-[40px] mb-4">Derfor er et hurtigt website også et grønnere website</h3>
