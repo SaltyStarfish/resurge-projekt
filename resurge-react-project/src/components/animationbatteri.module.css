@@ -51,15 +51,16 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: #2e3827;
+  background-color: #cebc98;
   animation: battery-drain 15s infinite linear;
   top: 50%;
 }
-
-@keyframes battery-drain {
-  from {top: 0%; background-color: #2e3827}
-  50% {background-color: #cebc98}
-  to {top: 100%; background-color: #722E3C}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes battery-drain {
+    from {top: 0%; background-color: #2e3827}
+    50% {background-color: #cebc98}
+    to {top: 100%; background-color: #722E3C}
+  }
 }
 
 #colordisplayandbatterydrain .batteryfill img{
