@@ -22,8 +22,8 @@ function FemtipsView() {
       
     ];
   return (
-    <div  className="flex justify-left items-left w-full max-w-[1102px] mx-auto my-12 px-4 sm:px-6 md:px-0 flex-col gap-[44px] md:gap-[105px]">
-      <h1 className="urbanist font-medium text-[80px] mb-4">5 perfor</h1>
+    <div  className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-8 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-10 md:gap-[105px]">
+      <h1 className="font-h1 font-medium mb-0">5 perfor</h1>
       <Sektion3 blocks={blocks} />
     </div>
   )

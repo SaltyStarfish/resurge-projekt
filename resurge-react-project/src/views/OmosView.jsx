@@ -4,6 +4,9 @@ import Sektion3 from "../components/Sektion3"
 import smallPlaceholder from "../assets/images/SmallPlaceholder.png"
 import placeholder from "../assets/images/placeholder.png"
 import infographic3 from "../assets/images/infographic 3 - long line.png";
+import stine from "../assets/images/stine-69d574236ff46.webp";
+import sarah from "../assets/images/sarah-69d5742328640.webp";
+import isabella from "../assets/images/isabella-69d5742319ce2.webp";
 
 
 function OmosView() {
@@ -25,14 +28,14 @@ function OmosView() {
       textAfter: ", hvor vi deler praktisk viden og værktøjer.",
       reverse: false },
     
-    { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Aaaa Aaaa - UX/UI-designer", 
-      text: "Aaaa designer websites, der konverterer besøgende til kunder. Hun målretter designet til netop dine kunder og gør det flot at kigge på og nemt at finde rundt i. Og så tester hun selvfølgelig, at alt virker og fungerer som tiltænkt inden websitet bliver udgivet til rigtige kunder", 
+    { imageSrc: sarah, imageAlt: "UX designer, Sarah", title: "Sarah - UX/UI-designer", 
+      text: "Sarah designer websites, der konverterer besøgende til kunder. Hun målretter designet til netop dine kunder og gør det flot at kigge på og nemt at finde rundt i. Og så tester hun selvfølgelig, at alt virker og fungerer som tiltænkt inden websitet bliver udgivet til rigtige kunder", 
       reverse: true },
-    { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Bbbb Bbbb - Grafiker", 
-      text: "Bbbb skaber visuelt tiltalende designs, der fanger opmærksomheden og styrker brandets identitet. Hun arbejder tæt sammen med teamet for at sikre, at designet er både æstetisk og funktionelt, og at det understøtter virksomhedens mål og budskaber.", 
+    { imageSrc: isabella, imageAlt: "Grafiker, Isabella", title: "Isabella - Grafiker", 
+      text: "Isabella skaber visuelt tiltalende designs, der fanger opmærksomheden og styrker brandets identitet. Hun arbejder tæt sammen med teamet for at sikre, at designet er både æstetisk og funktionelt, og at det understøtter virksomhedens mål og budskaber.", 
       reverse: false },
-    { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Cccc Cccc - Developer", 
-      text: "Cccc udvikler robuste og skalerbare løsninger, der sikrer, at dit website fungerer problemfrit. Han arbejder tæt sammen med designteamet for at implementere funktionalitet, der understøtter virksomhedens mål og brugernes behov.", 
+    { imageSrc: stine, imageAlt: "Developer, Stine", title: "Stine - Developer", 
+      text: "Stine udvikler robuste og skalerbare løsninger, der sikrer, at dit website fungerer problemfrit. Hun arbejder tæt sammen med designteamet for at implementere funktionalitet, der understøtter virksomhedens mål og brugernes behov.", 
       reverse: true },
     
   ];
@@ -45,12 +48,13 @@ function OmosView() {
   ];
 
   return (
-    <div className="flex justify-left items-left w-full max-w-[1102px] mx-auto my-12 px-4 sm:px-6 md:px-0 flex-col gap-[44px] md:gap-[105px]">
+    <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-8 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-10 md:gap-[105px]">
       {/* Opret sidens indhold herunder som "normal HTML" eller referer til components*/}
-      <h1 className="urbanist font-medium text-[80px] mb-4">Om os</h1>
+      <h1 className="font-h1 font-medium mb-0">Om os</h1>
       <Værdier blocks={forsideVaerdiBlocks} />
+      <h3 className="font-h3 font-medium">hej ref</h3>
       <Sektion3 blocks={firstSektionBlocks} />
-      <h2 className="urbanist font-medium text-[60px] mb-4">Mød vores seje hold</h2>
+      <h2 className="font-h2 font-medium mb-0">Mød vores seje hold</h2>
       <Sektion3 blocks={teamSektionBlocks} />
       
     </div>

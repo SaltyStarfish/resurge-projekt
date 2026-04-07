@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import smallPlaceholder from "../assets/images/SmallPlaceholder.png";
 import placeholder from "../assets/images/placeholder.png";
+import stine from "../assets/images/stine-69d574236ff46.webp";
+import sarah from "../assets/images/sarah-69d5742328640.webp";
+import isabella from "../assets/images/isabella-69d5742319ce2.webp";
 
 export default function Sektion3({
     blocks = [
@@ -20,14 +23,14 @@ export default function Sektion3({
             textAfter: ", hvor vi deler praktisk viden og værktøjer.",
             reverse: false },
         
-        { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Aaaa Aaaa - UX/UI-designer", 
-            text: "Aaaa designer websites, der konverterer besøgende til kunder. Hun målretter designet til netop dine kunder og gør det flot at kigge på og nemt at finde rundt i. Og så tester hun selvfølgelig, at alt virker og fungerer som tiltænkt inden websitet bliver udgivet til rigtige kunder", 
+        { imageSrc: sarah, imageAlt: "UX designer, Sarah", title: "Sarah - UX/UI-designer", 
+            text: "Sarah designer websites, der konverterer besøgende til kunder. Hun målretter designet til netop dine kunder og gør det flot at kigge på og nemt at finde rundt i. Og så tester hun selvfølgelig, at alt virker og fungerer som tiltænkt inden websitet bliver udgivet til rigtige kunder", 
             reverse: true },
-        { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Bbbb Bbbb - Grafiker", 
-            text: "Bbbb skaber visuelt tiltalende designs, der fanger opmærksomheden og styrker brandets identitet. Hun arbejder tæt sammen med teamet for at sikre, at designet er både æstetisk og funktionelt, og at det understøtter virksomhedens mål og budskaber.", 
+        { imageSrc: isabella, imageAlt: "Grafiker, Isabella", title: "Isabella - Grafiker", 
+            text: "Isabella skaber visuelt tiltalende designs, der fanger opmærksomheden og styrker brandets identitet. Hun arbejder tæt sammen med teamet for at sikre, at designet er både æstetisk og funktionelt, og at det understøtter virksomhedens mål og budskaber.", 
             reverse: false },
-        { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Cccc Cccc - Developer", 
-            text: "Cccc udvikler robuste og skalerbare løsninger, der sikrer, at dit website fungerer problemfrit. Han arbejder tæt sammen med designteamet for at implementere funktionalitet, der understøtter virksomhedens mål og brugernes behov.", 
+        { imageSrc: stine, imageAlt: "Developer, Stine", title: "Stine - Developer", 
+            text: "Stine udvikler robuste og skalerbare løsninger, der sikrer, at dit website fungerer problemfrit. Hun arbejder tæt sammen med designteamet for at implementere funktionalitet, der understøtter virksomhedens mål og brugernes behov.", 
             reverse: true },
 
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Begræns brugen af video og animationer", 
@@ -53,24 +56,24 @@ export default function Sektion3({
     ],
 }) {
     return (
-        <div className="parent-container flex justify-center items-center w-full max-w-[1102px] mx-auto my-12 px-4 sm:px-6 md:px-0 flex-col gap-[44px] md:gap-[105px]">
+        <div className="parent-container flex justify-center items-center w-full max-w-[1102px] mx-auto my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
             {blocks.map((block, index) => (
                 <div
                     key={index}
-                    className={`child-container w-full flex items-start gap-y-8 md:gap-y-0 md:gap-x-[110px] flex-col ${ block.reverse ? "md:flex-row-reverse" : "md:flex-row"
+                    className={`child-container w-full flex items-start gap-y-[30px] md:gap-y-0 md:gap-x-[110px] flex-col ${ block.reverse ? "md:flex-row-reverse" : "md:flex-row"
                     }`} >
-                    <div className={`image-container ${block.imageSize || "w-full max-w-[250px] aspect-square md:w-[250px] md:h-[250px] md:max-w-none"} flex items-start justify-start shrink-0 self-start`}>
+                    <div className={`image-container ${block.imageSize || "w-[300px] h-[300px] max-w-full"} flex items-center justify-center shrink-0 self-center md:items-start md:justify-start md:self-start`}>
                         {block.imageSrc ? (
-                            <img src={block.imageSrc} alt={block.imageAlt || ""} className="w-full h-full object-contain object-top" />
+                            <img src={block.imageSrc} alt={block.imageAlt || ""} className="w-full h-full object-contain object-top rounded-[25px]" />
                         ) : null}
                     </div>
-                    <div className={`content-container flex flex-col flex-1 gap-2 ${block.contentSize || "w-full md:min-w-0"} items-start`}>{/* bruger || for at alve en adskilling, er der ikke nogen størrelser på content array, så  bruger den de values der kommer bagefter */}
-                        <h3 className="urbanist font-medium text-[20px] md:text-[40px] leading-tight w-full max-w-[694px]">{block.title}</h3>
-                        <p className="verdana text-[12px] xl:text-[20px] text-gray-700 w-full max-w-[694px]">
+                    <div className={`content-container flex flex-col flex-1 gap-0 ${block.contentSize || "w-full md:min-w-0"} items-start`}>{/* bruger || for at alve en adskilling, er der ikke nogen størrelser på content array, så  bruger den de values der kommer bagefter */}
+                        <h3 className="font-h3 font-medium w-full max-w-[694px] break-words mb-[20px] md:mb-0">{block.title}</h3>
+                        <p className="font-body text-gray-700 w-full max-w-[694px]">
                             {block.linkText ? (
                                 <>
                                     {block.textBefore}
-                                    <Link to={block.linkTo} onClick={() => window.scrollTo(0, 0)} className="text-[#722E3C] transition-colors duration-300 hover:text-[#FFFFFF]">{block.linkText}</Link>
+                                    <Link to={block.linkTo} onClick={() => window.scrollTo(0, 0)} className="font-body text-[#722E3C] underline transition-colors duration-300 hover:text-[#FFFFFF]">{block.linkText}</Link>
                                     {block.textAfter}
                                 </>
                             ) : (
@@ -78,7 +81,7 @@ export default function Sektion3({
                             )}
                         </p>
                         {block.readMoreLink && (
-                            <Link to={block.readMoreLink} onClick={() => window.scrollTo(0, 0)} className="inline-block mt-4 urbanist font-medium text-[26px] text-[#722E3C] transition-colors duration-300 hover:text-[#FFFFFF]">
+                            <Link to={block.readMoreLink} onClick={() => window.scrollTo(0, 0)} className="inline-block mt-4 font-cta font-medium">
                                 læs mere her →
                             </Link>
                         )}

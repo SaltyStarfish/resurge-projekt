@@ -13,9 +13,9 @@ function ForsideView() {
   return (
     <>
       {/* Opret sidens indhold herunder som "normal HTML" eller referer til components*/}
-      <div className="flex justify-left items-left w-full max-w-[1102px] mx-auto my-12 px-4 sm:px-6 md:px-0 flex-col gap-[44px] md:gap-[105px]" >
-        <h1>Forside</h1>
-        <h2 className="urbanist font-medium text-[60px] mb-4" >Her finder du mere viden om optimering</h2>
+      <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-8 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-10 md:gap-[105px]" >
+        <h1 className="font-h1 font-medium">Forside</h1>
+        <h2 className="font-h2 font-medium mb-0" >Her finder du mere viden om optimering</h2>
         <Sektion3 blocks={blocks} />
       </div>
     </>

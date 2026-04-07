@@ -13,15 +13,15 @@ export default function Værdier({
 			{blocks.map((block, index) => (
 				<div key={index} className="child-container w-full flex flex-col items-start">
 					<div className="heading-container w-full text-left">
-						<h2 className="urbanist font-medium text-[60px] leading-tight w-full max-w-[694px] text-left">{block.title}</h2>
+						<h2 className="font-h2 font-medium w-full max-w-[694px] text-left">{block.title}</h2>
 					</div>
-					<div className={`image-container w-full ${block.imageSpacing || "pt-[80px] pb-[40px]"}`}>
+					<div className={`image-container w-full flex justify-center md:justify-start ${block.imageSpacing || "pt-[80px] pb-[40px]"}`}>
 						{block.imageSrc ? (
-							<img src={block.imageSrc} alt={block.imageAlt || ""} />
+							<img src={block.imageSrc} alt={block.imageAlt || ""} className="block max-w-full h-auto" />
 						) : null}
 					</div>
 					<div className="text-container w-full text-left">
-						<p className="verdana text-[12px] xl:text-[20px] text-gray-700 w-full max-w-[694px] text-left">{block.text}</p>
+						<p className="font-body text-gray-700 w-full max-w-[694px] text-left">{block.text}</p>
 					</div>
 				</div>
 			))}
