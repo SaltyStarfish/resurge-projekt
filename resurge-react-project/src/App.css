@@ -24,7 +24,44 @@
 .urbanist{font-family: 'Urbanist', Verdana, Tahoma, system-ui, sans-serif;}
 .verdana{font-family: Verdana, Tahoma, system-ui, sans-serif;}
 
-  /* sikrer at footeren altid er i bunden */
+/* Font-styles */
+.font-h1{ 
+  font-family: 'Urbanist', Verdana, Tahoma, system-ui, sans-serif; font-size: 48px; line-height: 100%;
+  @media screen and (min-width: 768px){font-size: 80px; line-height: 110%;}
+}
+
+.font-h2{ 
+  font-family: 'Urbanist', Verdana, Tahoma, system-ui, sans-serif; font-size: 26px; line-height: 120%;
+  @media screen and (min-width: 768px){font-size: 60px; line-height: 120%;}
+}
+
+.font-h3{ 
+  font-family: 'Urbanist', Verdana, Tahoma, system-ui, sans-serif; font-size: 20px; line-height: 130%;
+  @media screen and (min-width: 768px){font-size: 40px; line-height: 130%;}
+}
+
+.font-body{ 
+  font-family: Verdana, Tahoma, system-ui, sans-serif; font-size: 16px; line-height: 150%;
+  @media screen and (min-width: 768px){font-size: 20px; line-height: 150%;}
+}
+
+.font-tag{ 
+  font-family: Verdana, Tahoma, system-ui, sans-serif; font-size: 16px; line-height: 170%; font-style: italic;
+  @media screen and (min-width: 768px){font-size: 20px; line-height: 170%;}
+}
+
+.font-inlinelink{ 
+  font-family: Verdana, Tahoma, system-ui, sans-serif; font-size: 16px; line-height: 150%; color: #722E3C; text-decoration: underline; transition-property: color; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms;
+  @media screen and (min-width: 768px){font-size: 20px; line-height: 150%;}
+}
+
+.font-inlinelink:hover{ 
+  color: #fff;
+}
+
+
+
+/* sikrer at footeren altid er i bunden */
 #root{
   min-height: 100vh;
   display: grid; 
