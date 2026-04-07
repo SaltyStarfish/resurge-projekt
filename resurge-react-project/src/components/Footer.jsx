@@ -1,7 +1,7 @@
 export default function Footer() {
 
   return (
-    <footer className="mt-2 p-4 verdana flex flex-wrap text-white" style={{backgroundColor: "#383727"}}>
+    <footer className="mt-2 p-4 verdana flex flex-wrap text-white bg-[#383727]">
       <address className="p-4 flex-1">
         <p className="not-italic">Find vej:</p>
         <p>Åboulevarden&nbsp;1 <br /> 8000 Aarhus <br /> Danmark
