@@ -10,22 +10,25 @@ export default function Sektion3({
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Performanceoptimering", 
               textBefore: "Når det overflødige skæres væk, bliver dit website automatisk lettere og performer bedre. Dertil kommer billed-, video- og typografi-optimering, som igen er med til at gøre dit website hurtigere - uden at gå på kompromis med kvaliteten. Vi holder os opdateret på den nyeste teknologi og de bedste værktøjer til at optimere både performance og energiforbrug. Vil du selv i gang? Læs vores, ", 
               linkText: "5 konkrete tips til bedre performance, ",
-              linkTo: "/femtips",
+              linkTo: "/blog/fem-tips",
               textAfter: "hvor vi lister tiltag, du straks kan gå i gang med.",
               reverse: true },
         { imageSrc: placeholder, imageAlt: "placeholder", title: "Reduceret CO2-aftryk", 
-            text: "Klimabevidsthed fylder i arbejdstilgangen hos Resurge, og performance, og CO2-optimering går heldigvis hånd i hånd. Et website vil per definition aldrig blive bæredygtigt, og man siger, at det eneste bæredygtige website er et website, som ikke eksisterer. Med det i mente tror vi, at det mindst bæredygtige website er et website, som ikke opfylder dets formål. Derfor er det vores topprioritet at skabe effektive webløsninger, som skaber værdi for virksomheder og deres kunder. Samtidig arbejder vi aktivt med at gøre websites mindre datatunge for at opnå en bedre brugeroplevelse, højere performance og et mindre CO2-aftryk.", 
+            textBefore: "Klimabevidsthed fylder i arbejdstilgangen hos Resurge, og performance- og CO2-optimering går heldigvis hånd i hånd. Et website vil per definition aldrig blive bæredygtigt, og man siger, at det eneste bæredygtige website er et website, som ikke eksisterer. Med det i mente tror vi, at det mindst bæredygtige website er et website, som ikke opfylder dets formål. Derfor er det vores topprioritet at skabe effektive webløsninger, som skaber værdi for virksomheder og deres kunder. Samtidig arbejder vi aktivt med at gøre websites mindre datatunge for at opnå en bedre brugeroplevelse, højere performance og et mindre CO2-aftryk. Du finder konkrete råd i vores",
+            linkText: "guides til bedre performance og lavere CO2-aftryk",
+            linkTo: "/blog",
+            textAfter: ", hvor vi deler praktisk viden og værktøjer.",
             reverse: false },
         
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Aaaa Aaaa - UX/UI-designer", 
             text: "Aaaa designer websites, der konverterer besøgende til kunder. Hun målretter designet til netop dine kunder og gør det flot at kigge på og nemt at finde rundt i. Og så tester hun selvfølgelig, at alt virker og fungerer som tiltænkt inden websitet bliver udgivet til rigtige kunder", 
-            reverse: false },
+            reverse: true },
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Bbbb Bbbb - Grafiker", 
             text: "Bbbb skaber visuelt tiltalende designs, der fanger opmærksomheden og styrker brandets identitet. Hun arbejder tæt sammen med teamet for at sikre, at designet er både æstetisk og funktionelt, og at det understøtter virksomhedens mål og budskaber.", 
-            reverse: true },
+            reverse: false },
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Cccc Cccc - Developer", 
             text: "Cccc udvikler robuste og skalerbare løsninger, der sikrer, at dit website fungerer problemfrit. Han arbejder tæt sammen med designteamet for at implementere funktionalitet, der understøtter virksomhedens mål og brugernes behov.", 
-            reverse: false },
+            reverse: true },
 
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Begræns brugen af video og animationer", 
             text: "Video og animationer er noget af det mest datatunge indhold. Sørg derfor for ikke at sætte dine videoer til autoplay, så de først starter, hvis brugeren ønsker det. Det mindsker både dataforbrug og irritation hos brugerne. Er videoer nødvendige, så hold dem korte eller overvej, om du kan formidle pointerne med små animationer eller andre simple grafiske elementer.", 
@@ -42,6 +45,11 @@ export default function Sektion3({
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Gør det nemt at finde rundt", 
             text: "Et simpelt website er et hurtigt website. Holder du siden simpel, så brugeren undgår unødige klik og omveje, giver det både en bedre brugeroplevelse og en bedre performance på dit site.\n Jo færre trin der er til et køb eller at kontakte dig, desto mere sandsynligt er det, at brugeren faktisk gør det. Benyt derfor klare menuer og struktur samt tydelige call to actions, så det er klart for brugeren, hvor der skal klikkes.  ", 
             reverse: false },
+
+        { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Gør det nemt at finde rundt", 
+            text: "Et simpelt website er et hurtigt website. Holder du siden simpel, så brugeren undgår unødige klik og omveje, giver det både en bedre brugeroplevelse og en bedre performance på dit site.\n Jo færre trin der er til et køb eller at kontakte dig, desto mere sandsynligt er det, at brugeren faktisk gør det. Benyt derfor klare menuer og struktur samt tydelige call to actions, så det er klart for brugeren, hvor der skal klikkes.  ", 
+            reverse: false, readMoreLink: "/ydelser" },
+        
     ],
 }) {
     return (
@@ -62,15 +70,18 @@ export default function Sektion3({
                             {block.linkText ? (
                                 <>
                                     {block.textBefore}
-                                    <Link to={block.linkTo} className="underline hover:no-underline">
-                                        {block.linkText}
-                                    </Link>
+                                    <Link to={block.linkTo} onClick={() => window.scrollTo(0, 0)} className="text-[#722E3C] transition-colors duration-300 hover:text-[#FFFFFF]">{block.linkText}</Link>
                                     {block.textAfter}
                                 </>
                             ) : (
                                 block.text
                             )}
                         </p>
+                        {block.readMoreLink && (
+                            <Link to={block.readMoreLink} onClick={() => window.scrollTo(0, 0)} className="inline-block mt-4 urbanist font-medium text-[26px] text-[#722E3C] transition-colors duration-300 hover:text-[#FFFFFF]">
+                                læs mere her →
+                            </Link>
+                        )}
                     </div>
                 </div>
             ))}
