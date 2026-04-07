@@ -1,41 +1,40 @@
-import { Link } from "react-router-dom";
+// Husk at importere alle Links og Components, der referes til
+import PriceCardItem from '../components/PriceCardItem';
+import logo from '../assets/images/placeholder.png';
 
-//dette er en komponent
-export default function PriceCardSection() {
+
+function PriceCardSection() {
+
+const cards = [
+  {
+    image: logo, 
+    title: "Performance-optimering",
+    indhold: "Få optimeret din eksisterende hjemmeside. Vi arbejder med billed-optimering, video-optimering, kode-optimering for at gøre din hjemmeside hurtigere.",
+    pris: "Pris fra 999,-",
+  },
+  {
+    image: logo, 
+    title: "Ny hjemmeside",
+    indhold: "Personlig tilpasset hjemmeside til din virksomhed og dine kunder. Kom med dine egne ideer, eller lad os hjælpe med alt fra indhold og branding til programmering og performance.",
+    pris: "Pris fra 99,-/md. + 2999,-",
+  },
+  {
+    image: logo, 
+    title: "Ny webshop",
+    indhold: "Skræddersyet webshop til din virksomhed og dine kunder.",
+    pris: "Pris fra 199,-/md. + 3999,-",
+  },
+];
 
   return (
-    <div className="m-2 w-100 border py-2 px-4 rounded verdana">
-      <p> Denne box er en skabelon, man kan bruge til at oprette components. Ellers kan man bare slette den.</p>
-
-      {/* Tailwind styling */}
-      <div className="m-2 w-80 bg-gray-200 py-2 px-4 rounded verdana"> 
-        <p> Eksempel på styling med Tailwind</p>
+    <>
+      <div className='flex gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar'>
+        {cards.map((card, index) => (
+          <PriceCardItem key={index} {...card}/>
+        ))}
       </div>
-
-      {/* Inline styling */}
-      <div style={{margin: "8px", width: "320px", backgroundColor: "lightgray", padding: "8px 16px", borderRadius: "3px", fontFamily: "Verdana, Tahoma, system-ui, sans-serif"}}> 
-        <p> 
-          Eksempel på inline-styling
-        </p>
-      </div>
-
-      {/* Interne links*/}
-      <div className="m-2 w-80 bg-gray-100 py-2 px-4 rounded text-blue-700 verdana"> 
-        <Link to="/kontakt">Eksempel på et internt link (til Kontakt)</Link>
-      </div>
-    </div>
+    </>
   )
 }
 
-/* 
-NOTES:
-- HUSK at importere Link øverst på siden, hvis du vil bruge interne links!
-- Se hvilke paths, der kan linkes til i App.jsx-filen
-
-- Tailwind cheat sheet:
-https://flowbite.com/tools/tailwind-cheat-sheet/
-
-eller
-
-https://nerdcave.com/tailwind-cheat-sheet
-*/
+export default PriceCardSection
