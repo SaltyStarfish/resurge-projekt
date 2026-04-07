@@ -50,7 +50,7 @@ function BlogView() {
         {/* Blogoversigt */}
         <div className="space-y-20">
           {blogPosts.map((post, i) => (
-            <FiftyFifty key={i} type={post.type} data={post} reverse={post.reverse} />
+            <FiftyFifty key={i} type={post.type} indhold={post} reverse={post.reverse} />
           ))}
         </div>
       </Container>
