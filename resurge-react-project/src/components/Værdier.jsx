@@ -4,7 +4,7 @@ import infographic3 from "../assets/images/infographic 3 - long line.png";
 export default function Værdier({
 	blocks = [
 		{ title: "vores værdier", imageSrc: infographic2, imageAlt: "" },
-		{ title: "vores grundsøjler", imageSrc: infographic3, imageAlt: "", text: "tekst 2" },
+		{ title: "vores grundsøjler", imageSrc: infographic3, imageAlt: ""},
 	],
 
 }) {

@@ -41,7 +41,7 @@ function OmosView() {
   const teamSektionBlocks = [blocks[3], blocks[4], blocks[5]];
 
   const forsideVaerdiBlocks = [
-    { title: "vores værdier", imageSrc: infographic3, imageAlt: "", text: "tekst 2" },
+    { title: "vores værdier", imageSrc: infographic3, imageAlt: "" },
   ];
 
   return (
