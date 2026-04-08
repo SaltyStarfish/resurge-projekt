@@ -7,6 +7,7 @@ import isabella from "../assets/images/isabella-69d5742319ce2.webp";
 
 export default function Sektion3({
     blocks = [
+        // om vores værdier black array, med linktekst og reverse positioning//
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Skræddersyede løsninger", 
             text: "Alt for mange bureauer arbejder med tunge løsninger, som ikke er tilpasset den enkelte virksomhed. Som indsamler data, der aldrig bliver brugt, men kun fylder og bruger strøm. Eller udliciterer webproduktionen til andre lande, hvor du mister kontrollen og overblikket. Den tendens vil vi gøre op med\n Hos Resurge mener vi, at tingene skal gøres ordentligt, og til en overkommelig pris. Så du har kontrollen hele vejen igennem og får en webløsning, der er tilpasset dine behov, ikke bare en standardpakke. Websitet skal passe til din virksomhed her og nu og kan udvides, når din virksomhed vokser.",
             reverse: false },
@@ -22,7 +23,8 @@ export default function Sektion3({
             linkTo: "/blog",
             textAfter: ", hvor vi deler praktisk viden og værktøjer.",
             reverse: false },
-        
+
+        //om holdet array, med reverse positioning, med true, false//
         { imageSrc: sarah, imageAlt: "UX designer, Sarah", title: "Sarah - UX/UI-designer", 
             text: "Sarah designer websites, der konverterer besøgende til kunder. Hun målretter designet til netop dine kunder og gør det flot at kigge på og nemt at finde rundt i. Og så tester hun selvfølgelig, at alt virker og fungerer som tiltænkt inden websitet bliver udgivet til rigtige kunder", 
             reverse: true },
@@ -33,6 +35,7 @@ export default function Sektion3({
             text: "Stine udvikler robuste og skalerbare løsninger, der sikrer, at dit website fungerer problemfrit. Hun arbejder tæt sammen med designteamet for at implementere funktionalitet, der understøtter virksomhedens mål og brugernes behov.", 
             reverse: true },
 
+        //5 tips black array//
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Begræns brugen af video og animationer", 
             text: "Video og animationer er noget af det mest datatunge indhold. Sørg derfor for ikke at sætte dine videoer til autoplay, så de først starter, hvis brugeren ønsker det. Det mindsker både dataforbrug og irritation hos brugerne. Er videoer nødvendige, så hold dem korte eller overvej, om du kan formidle pointerne med små animationer eller andre simple grafiske elementer.", 
             reverse: false },
@@ -48,23 +51,27 @@ export default function Sektion3({
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Gør det nemt at finde rundt", 
             text: "Et simpelt website er et hurtigt website. Holder du siden simpel, så brugeren undgår unødige klik og omveje, giver det både en bedre brugeroplevelse og en bedre performance på dit site.\n Jo færre trin der er til et køb eller at kontakte dig, desto mere sandsynligt er det, at brugeren faktisk gør det. Benyt derfor klare menuer og struktur samt tydelige call to actions, så det er klart for brugeren, hvor der skal klikkes.  ", 
             reverse: false },
-
+        
+        //forside block array med readMoreLink og reverse positioning//
         { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Gør det nemt at finde rundt", 
             text: "Et simpelt website er et hurtigt website. Holder du siden simpel, så brugeren undgår unødige klik og omveje, giver det både en bedre brugeroplevelse og en bedre performance på dit site.\n Jo færre trin der er til et køb eller at kontakte dig, desto mere sandsynligt er det, at brugeren faktisk gør det. Benyt derfor klare menuer og struktur samt tydelige call to actions, så det er klart for brugeren, hvor der skal klikkes.  ", 
             reverse: false, readMoreLink: "/ydelser" },
         
     ],
 }) {
+    const inlineTextLinkClasses = "font-inlinelink";
+    const readMoreLinkClasses = "inline-block mt-4 font-inlinelink urbanist font-medium no-underline";
+
     return (
         <div className="parent-container flex justify-center items-center w-full max-w-[1102px] mx-auto my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
             {blocks.map((block, index) => (
                 <div
                     key={index}
-                    className={`child-container w-full flex items-start gap-y-[30px] md:gap-y-0 md:gap-x-[110px] flex-col ${ block.reverse ? "md:flex-row-reverse" : "md:flex-row"
-                    }`} >
-                    <div className={`image-container ${block.imageSize || "w-[300px] h-[300px] max-w-full"} flex items-center justify-center shrink-0 self-center md:items-start md:justify-start md:self-start`}>
+                    className={`child-container w-full flex items-start gap-y-[30px] md:gap-y-0 md:gap-x-[110px] flex-col ${block.reverse ? "md:flex-row-reverse" : "md:flex-row"}`}
+                >
+                    <div className={`image-container ${block.imageSize || "w-[340px] h-[340px] md:w-[300px] md:h-[300px] max-w-full"} flex items-center justify-center shrink-0 self-center md:items-start md:justify-start md:self-start rounded-[25px] overflow-hidden`}>
                         {block.imageSrc ? (
-                            <img src={block.imageSrc} alt={block.imageAlt || ""} className="w-full h-full object-contain object-top rounded-[25px]" />
+                            <img src={block.imageSrc} alt={block.imageAlt || ""} className={`w-full h-full ${block.imageSrc === sarah || block.imageSrc === isabella || block.imageSrc === stine ? "object-cover" : "object-contain"} object-top rounded-[25px]`} />
                         ) : null}
                     </div>
                     <div className={`content-container flex flex-col flex-1 gap-0 ${block.contentSize || "w-full md:min-w-0"} items-start`}>{/* bruger || for at alve en adskilling, er der ikke nogen størrelser på content array, så  bruger den de values der kommer bagefter */}
@@ -73,7 +80,7 @@ export default function Sektion3({
                             {block.linkText ? (
                                 <>
                                     {block.textBefore}
-                                    <Link to={block.linkTo} onClick={() => window.scrollTo(0, 0)} className="font-body text-[#722E3C] underline transition-colors duration-300 hover:text-[#FFFFFF]">{block.linkText}</Link>
+                                    <Link to={block.linkTo} onClick={() => window.scrollTo(0, 0)} className={inlineTextLinkClasses}>{block.linkText}</Link>
                                     {block.textAfter}
                                 </>
                             ) : (
@@ -81,7 +88,7 @@ export default function Sektion3({
                             )}
                         </p>
                         {block.readMoreLink && (
-                            <Link to={block.readMoreLink} onClick={() => window.scrollTo(0, 0)} className="inline-block mt-4 urbanist font-medium text-[26px] text-[#722E3C] transition-colors duration-300 hover:text-[#FFFFFF]">
+                            <Link to={block.readMoreLink} onClick={() => window.scrollTo(0, 0)} className={readMoreLinkClasses}>
                                 læs mere her →
                             </Link>
                         )}

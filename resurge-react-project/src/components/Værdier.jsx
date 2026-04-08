@@ -12,6 +12,7 @@ export default function Værdier({
 }) {
 	// Holder styr på om viewport er mobil-størrelse, så billedkilden kan skiftes pr. blok.
 	const [isMobile, setIsMobile] = useState(false);
+	const defaultImageSpacing = "pt-[80px] pb-[40px]";
 
 	useEffect(() => {
 		// Holder en aktiv media query-lytter ved 768px og derunder.
@@ -28,22 +29,26 @@ export default function Værdier({
 
 	return (
 		<div className="parent-container w-full max-w-[1102px] mx-auto">
-			{blocks.map((block, index) => (
-				<div key={index} className="child-container w-full flex flex-col items-start">
-					<div className="heading-container w-full text-left">
-						<h2 className="font-h2 font-medium w-full max-w-[694px] text-left">{block.title}</h2>
+			{blocks.map((block, index) => {
+				const resolvedImageSrc = isMobile && block.mobileImageSrc ? block.mobileImageSrc : block.imageSrc;
+
+				return (
+					<div key={index} className="child-container w-full flex flex-col items-start">
+						<div className="heading-container w-full text-left">
+							<h2 className="font-h2 font-medium w-full max-w-[694px] text-left">{block.title}</h2>
+						</div>
+						<div className={`image-container w-full flex justify-center md:justify-start ${block.imageSpacing || defaultImageSpacing}`}>
+							{/* Hvis der findes en mobil-variant, bruges den på mobil; ellers bruges standard imageSrc. */}
+							{resolvedImageSrc ? (
+								<img src={resolvedImageSrc} alt={block.imageAlt || ""} className="block max-w-full h-auto" />
+							) : null}
+						</div>
+						<div className="text-container w-full text-left">
+							<p className="font-body w-full max-w-[694px] text-left">{block.text}</p>
+						</div>
 					</div>
-					<div className={`image-container w-full flex justify-center md:justify-start ${block.imageSpacing || "pt-[80px] pb-[40px]"}`}>
-						{/* Hvis der findes en mobil-variant, bruges den på mobil; ellers bruges standard imageSrc. */}
-						{(isMobile && block.mobileImageSrc ? block.mobileImageSrc : block.imageSrc) ? (
-							<img src={isMobile && block.mobileImageSrc ? block.mobileImageSrc : block.imageSrc} alt={block.imageAlt || ""} className="block max-w-full h-auto" />
-						) : null}
-					</div>
-					<div className="text-container w-full text-left">
-						<p className="font-body w-full max-w-[694px] text-left">{block.text}</p>
-					</div>
-				</div>
-			))}
+				);
+			})}
 		</div>
 	);
 }
