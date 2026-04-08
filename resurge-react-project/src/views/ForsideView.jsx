@@ -70,7 +70,7 @@ function ForsideView() {
             <p className="font-body mb-10">Performance-optimering er vores speciale. Vi sørger for, at din hjemmeside ikke blot ser godt ud, men loader hurtigt, konverterer bedre og performer bedre på Google. Vi udvikler løsninger med fokus på lavere energiforbrug og effektiv drift.</p>
           </section>
         </Container>
-        <div className="max-w-[95vw]">
+        <div className="max-w-screen">
           <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar">
             <PriceCardSection/>
           </div>
@@ -79,7 +79,7 @@ function ForsideView() {
           <CtaLink to={"/ydelser"}>Læs mere</CtaLink>
           <h2 className="font-h2 mt-[105px] mb-2.5">Brug for inspiration? <br /> Tag et kig på vores tidligere samarbejder</h2>
         </Container>
-        <div className="max-w-[95vw]">
+        <div className="max-w-screen">
           <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar mb-[105px] mt-20">
             <div className="flex gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar px-6 md:px-12 lg:px-20">
               {cases.map((item, index) => (
