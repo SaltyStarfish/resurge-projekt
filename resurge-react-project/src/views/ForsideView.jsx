@@ -5,6 +5,8 @@ import Container from "../components/Container";
 import PriceCardSection from "../components/PriceCardSection";
 import CaseCard from "../components/CaseCard";
 import CtaLink from "../components/CtaLink";
+import Værdier from "../components/Værdier";
+import infoLine1 from "../assets/images/infoline.svg";
 
 
 
@@ -40,12 +42,26 @@ function ForsideView() {
         link: "#"
       },
     ]
+
+    const forsideVaerdiBlocks = [
+      {
+        title: "vores grundsøjler",
+        imageSrc: infoLine1,
+        imageAlt: "infographic om vores grundsojler",
+        imageSpacing: "pt-[30px] pb-0"
+      },
+    ];
     
     return (
       <>
         <Container>
           <h1 className="font-h1 font-medium my-[105px]">Resurge</h1>
         </Container>
+        <Container>
+          <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
+            <Værdier blocks={forsideVaerdiBlocks} />
+          </div>
+      </Container>
       <div className="overflow-x-hidden">
         <Container>
           <section className="mb-[105px]">
@@ -81,7 +97,7 @@ function ForsideView() {
         </div>
       </div>
       <Container>
-        <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-8 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-10 md:gap-[105px]" >
+        <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]" >
           <h2 className="font-h2 font-medium mb-0" >Her finder du mere viden om optimering</h2>
           <Sektion3 blocks={blocks} />
         </div>

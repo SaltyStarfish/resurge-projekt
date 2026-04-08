@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import info2x2_1 from "../assets/images/info2x2.1.svg";
 import info2x2_2 from "../assets/images/info2x2,2.svg";
 import infoLine1 from "../assets/images/infoline.svg";
-import infoLine2 from "../assets/images/infoline2.svg";
-
 
 export default function Værdier({
 	blocks = [
