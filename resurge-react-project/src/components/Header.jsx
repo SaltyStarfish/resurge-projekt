@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // react-router-dom er den extension, som gør at man kan referere mellem siderne
+import { NavLink } from "react-router-dom"; // react-router-dom er den extension, som gør at man kan referere mellem siderne
 import logoimage from '../assets/logo/resurge.svg';
 import headerstyles from './header.module.css';
 
@@ -20,7 +20,7 @@ export default function Header() {
               isActive ? headerstyles.aktiv : ""
             }`}
           >
-          <Link className={headerstyles.linktext} to="/"><img src={logoimage} alt="Resurge logo" width="100"/></Link>
+          <NavLink className={headerstyles.linktext} to="/"><img src={logoimage} alt="Resurge logo" width="100"/></NavLink>
           <button id="btn_burger" onClick={toggleBurgerMenu} className={headerstyles.btn_burger}>
             <span></span>
             <span></span>
@@ -28,12 +28,26 @@ export default function Header() {
           </button>
         </div>
         <menu>
-          <li><Link className={headerstyles.linktext} to="/">Forside<span class="header-link-hover-effekt"></span></Link></li>
-          <li><Link className={headerstyles.linktext} to="/ydelser">Ydelser<span class="header-link-hover-effekt"></span></Link></li>
-          <li><Link className={headerstyles.linktext} to="/cases">Cases<span class="header-link-hover-effekt"></span></Link></li>
-          <li><Link className={headerstyles.linktext} to="/blog">Blog<span class="header-link-hover-effekt"></span></Link></li>
-          <li><Link className={headerstyles.linktext} to="/om-os">Om os<span class="header-link-hover-effekt"></span></Link></li>
-          <li><Link className={headerstyles.linktext} to="/kontakt">Kontakt<span class="header-link-hover-effekt"></span></Link></li>
+          {/* <li><NavLink className={headerstyles.linktext} to="/">Forside<span class="header-NavLink-hover-effekt"></span></NavLink></li> */}
+          <li>
+            <NavLink className={({ isActive }) =>  isActive ? `${headerstyles.linktext} ${headerstyles.aktivfane}` : headerstyles.linktext} to="/">Forside<span className={headerstyles.navhovereffekt}></span></NavLink>
+          </li>
+
+          <li>
+            <NavLink className={({ isActive }) =>  isActive ? `${headerstyles.linktext} ${headerstyles.aktivfane}` : headerstyles.linktext} to="/ydelser">Ydelser<span className={headerstyles.navhovereffekt}></span></NavLink>
+          </li>
+
+          <li>
+            <NavLink className={({ isActive }) =>  isActive ? `${headerstyles.linktext} ${headerstyles.aktivfane}` : headerstyles.linktext} to="/blog">Blog<span className={headerstyles.navhovereffekt}></span></NavLink>
+          </li>
+
+          <li>
+            <NavLink className={({ isActive }) =>  isActive ? `${headerstyles.linktext} ${headerstyles.aktivfane}` : headerstyles.linktext} to="/om-os">Om os<span className={headerstyles.navhovereffekt}></span></NavLink>
+          </li>
+
+          <li>
+            <NavLink className={({ isActive }) =>  isActive ? `${headerstyles.linktext} ${headerstyles.aktivfane}` : headerstyles.linktext} to="/kontakt">Kontakt<span className={headerstyles.navhovereffekt}></span></NavLink>
+          </li>
         </menu>
       </nav>
     </header>

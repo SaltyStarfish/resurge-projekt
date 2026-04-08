@@ -4,6 +4,11 @@ header *{
   text-decoration: none;
 }
 
+header .aktivfane{
+  color: red;
+  background-color: blue;
+}
+
 header{
   position: sticky; /*bliver siddende i toppen*/
   top: 0;
@@ -83,7 +88,7 @@ header .linktext{
 
 header .linktext:hover,
 header .linktext:focus,
-header .aktiv-fane{
+header .aktivfane{
   background-color: hsl(56, 18%, 24%);
 }
 
@@ -105,26 +110,26 @@ header .linktext:active{
     position: relative;
   }
 
-  .header-link-hover-effekt{
-    background-color: #fff;
+  .navhovereffekt{
+    background-color: transparent;
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 4px;
+    width: 100%;
+    height: 0px;
     transition: all 0.5s ease;
   }
-
+  
   header .linktext:hover,
   header .linktext:focus,
-  header .aktiv-fane{
+  header .aktivfane{
     background-color: transparent;
   }
-
-  header .linktext:hover .header-link-hover-effekt,
-  header .linktext:focus .header-link-hover-effekt, 
-  header .aktiv-fane .header-link-hover-effekt{
-    width: 100%;
+  
+  header .linktext:hover .navhovereffekt,
+  header .linktext:focus .navhovereffekt, 
+  header .aktivfane .navhovereffekt{
+    height: 4px;
+    background-color: #fff;
   }
 
   header .responsivetopnav{/*indeholder kun logo*/
