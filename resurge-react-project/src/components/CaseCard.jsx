@@ -12,7 +12,7 @@ export default function CaseCard({ image, tags = [], title, description, link })
         )}
 
       <div className="p-4 flex flex-col items-start text-left">
-        <h3 className="urbanist font-medium text-[40px] mb-4">{title}</h3>
+        <h3 className="font-h3 font-medium">{title}</h3>
         <p>{description}</p>
 
         <CtaLink to={link}>Læs mere</CtaLink>
