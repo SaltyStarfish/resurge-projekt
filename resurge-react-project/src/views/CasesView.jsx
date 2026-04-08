@@ -41,7 +41,7 @@ export default function CasesView() {
     <Container>
 
       <section className="mb-16">
-        <h1 className="urbanist text-[80px] mb-4">Cases</h1>
+        <h1 className="font-h1 font-medium mb-4">Cases</h1>
         <p className="urbanist text-[30px] mb-6">
           Hos Resurge specialiserer vi os i skræddersyede, energieffektive
           webløsninger. Se et udpluk af vores cases herunder.

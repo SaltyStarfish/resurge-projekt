@@ -38,7 +38,7 @@ function BlogView() {
       <Container>
         {/* Intro */}
         <section className="blog-intro mb-16">
-          <h1 className="urbanist font-medium text-[80px] mb-4">
+          <h1 className="font-h1 font-medium mb-4">
             Inspiration og guides
           </h1>
           <p className="urbanist text-[30px]">
