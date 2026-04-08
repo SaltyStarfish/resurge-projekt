@@ -81,7 +81,7 @@ export default function Sektion3({
                             )}
                         </p>
                         {block.readMoreLink && (
-                            <Link to={block.readMoreLink} onClick={() => window.scrollTo(0, 0)} className="inline-block mt-4 font-cta font-medium">
+                            <Link to={block.readMoreLink} onClick={() => window.scrollTo(0, 0)} className="inline-block mt-4 urbanist font-medium text-[26px] text-[#722E3C] transition-colors duration-300 hover:text-[#FFFFFF]">
                                 læs mere her →
                             </Link>
                         )}
