@@ -41,7 +41,7 @@ function BlogView() {
           <h1 className="urbanist font-medium text-[80px] mb-4">
             Inspiration og guides
           </h1>
-          <p className="urbanist font-medium text-[30px]">
+          <p className="urbanist text-[30px]">
             Her har vi samlet vores praktiske tips til et hurtigere og mere
             energieffektivt website
           </p>
