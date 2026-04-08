@@ -3,7 +3,10 @@ import Værdier from "../components/Værdier"
 import Sektion3 from "../components/Sektion3"
 import smallPlaceholder from "../assets/images/SmallPlaceholder.png"
 import placeholder from "../assets/images/placeholder.png"
-import infographic3 from "../assets/images/infographic 3 - long line.png";
+import info2x2_1 from "../assets/images/info2x2.1.svg";
+import info2x2_2 from "../assets/images/info2x2,2.svg";
+import infoLine1 from "../assets/images/infoline.svg";
+import infoLine2 from "../assets/images/infoline2.svg";
 import stine from "../assets/images/stine-69d574236ff46.webp";
 import sarah from "../assets/images/sarah-69d5742328640.webp";
 import isabella from "../assets/images/isabella-69d5742319ce2.webp";
@@ -44,7 +47,7 @@ function OmosView() {
   const teamSektionBlocks = [blocks[3], blocks[4], blocks[5]];
 
   const forsideVaerdiBlocks = [
-    { title: "vores værdier", imageSrc: infographic3, imageAlt: "" },
+    { title: "vores værdier", imageSrc: info2x2_2, mobileImageSrc: info2x2_1, imageAlt: "" },
   ];
 
   return (
