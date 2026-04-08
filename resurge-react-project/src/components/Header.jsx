@@ -38,6 +38,10 @@ export default function Header() {
           </li>
 
           <li>
+            <NavLink className={({ isActive }) =>  isActive ? `${headerstyles.linktext} ${headerstyles.aktivfane}` : headerstyles.linktext} to="/cases">Cases<span className={headerstyles.navhovereffekt}></span></NavLink>
+          </li>
+
+          <li>
             <NavLink className={({ isActive }) =>  isActive ? `${headerstyles.linktext} ${headerstyles.aktivfane}` : headerstyles.linktext} to="/blog">Blog<span className={headerstyles.navhovereffekt}></span></NavLink>
           </li>
 
