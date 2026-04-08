@@ -5,8 +5,6 @@ import smallPlaceholder from "../assets/images/SmallPlaceholder.png"
 import placeholder from "../assets/images/placeholder.png"
 import info2x2_1 from "../assets/images/info2x2.1.svg";
 import info2x2_2 from "../assets/images/info2x2,2.svg";
-import infoLine1 from "../assets/images/infoline.svg";
-import infoLine2 from "../assets/images/infoline2.svg";
 import stine from "../assets/images/stine-69d574236ff46.webp";
 import sarah from "../assets/images/sarah-69d5742328640.webp";
 import isabella from "../assets/images/isabella-69d5742319ce2.webp";
@@ -46,15 +44,15 @@ function OmosView() {
   const firstSektionBlocks = blocks.slice(0, 3);
   const teamSektionBlocks = [blocks[3], blocks[4], blocks[5]];
 
-  const forsideVaerdiBlocks = [
-    { title: "vores værdier", imageSrc: info2x2_2, mobileImageSrc: info2x2_1, imageAlt: "" },
+  const vaerdiBlocks = [
+    { title: "vores værdier", imageSrc: info2x2_2, mobileImageSrc: info2x2_1, imageAlt: "", imageSpacing: "pt-[30px] pb-0" },
   ];
 
   return (
     <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-8 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-10 md:gap-[105px]">
-      {/* Opret sidens indhold herunder som "normal HTML" eller referer til components*/}
-      <h1 className="font-h1 font-medium mb-0">Om os</h1>
-      <Værdier blocks={forsideVaerdiBlocks} />
+      {/* Opret sidens indhold herunder som "normal HTML" eller referer til components */}
+      <h1 className="font-h1 font-medium my-[105px]">Om os</h1>
+      <Værdier blocks={vaerdiBlocks} />
       <Sektion3 blocks={firstSektionBlocks} />
       <h2 className="font-h2 font-medium mb-0">Mød vores seje hold</h2>
       <Sektion3 blocks={teamSektionBlocks} />
