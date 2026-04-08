@@ -71,7 +71,7 @@ export default function Sektion3({
                 >
                     <div className={`image-container ${block.imageSize || "w-[340px] h-[340px] md:w-[300px] md:h-[300px] max-w-full"} flex items-center justify-center shrink-0 self-center md:items-start md:justify-start md:self-start rounded-[25px] overflow-hidden`}>
                         {block.imageSrc ? (
-                            <img src={block.imageSrc} alt={block.imageAlt || ""} className={`w-full h-full ${block.imageSrc === sarah || block.imageSrc === isabella || block.imageSrc === stine ? "object-cover" : "object-contain"} object-top rounded-[25px]`} />
+                            <img src={block.imageSrc} alt={block.imageAlt || ""} loading="lazy" className={`w-full h-full ${block.imageSrc === sarah || block.imageSrc === isabella || block.imageSrc === stine ? "object-cover" : "object-contain"} object-top rounded-[25px]`} />
                         ) : null}
                     </div>
                     <div className={`content-container flex flex-col flex-1 gap-0 ${block.contentSize || "w-full md:min-w-0"} items-start`}>{/* bruger || for at alve en adskilling, er der ikke nogen størrelser på content array, så  bruger den de values der kommer bagefter */}
