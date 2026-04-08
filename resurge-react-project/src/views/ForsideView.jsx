@@ -48,7 +48,7 @@ function ForsideView() {
         title: "vores grundsøjler",
         imageSrc: infoLine1,
         imageAlt: "infographic om vores grundsojler",
-        imageSpacing: "pt-[30px] pb-0"
+        imageSpacing: "pt-[30px] pb-0 md:pt-[80px] md:pb-[60px]"
       },
     ];
     
