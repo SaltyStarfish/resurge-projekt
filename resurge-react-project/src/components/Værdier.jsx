@@ -42,7 +42,7 @@ export default function Værdier({
 						) : null}
 					</div>
 					<div className="text-container w-full text-left">
-						<p className="font-body text-gray-700 w-full max-w-[694px] text-left">{block.text}</p>
+						<p className="font-body w-full max-w-[694px] text-left">{block.text}</p>
 					</div>
 				</div>
 			))}

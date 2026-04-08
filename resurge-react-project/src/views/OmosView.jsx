@@ -55,7 +55,6 @@ function OmosView() {
       {/* Opret sidens indhold herunder som "normal HTML" eller referer til components*/}
       <h1 className="font-h1 font-medium mb-0">Om os</h1>
       <Værdier blocks={forsideVaerdiBlocks} />
-      <h3 className="font-h3 font-medium">hej ref</h3>
       <Sektion3 blocks={firstSektionBlocks} />
       <h2 className="font-h2 font-medium mb-0">Mød vores seje hold</h2>
       <Sektion3 blocks={teamSektionBlocks} />
