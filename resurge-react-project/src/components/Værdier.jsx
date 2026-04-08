@@ -40,7 +40,7 @@ export default function Værdier({
 						<div className={`image-container w-full flex justify-center md:justify-start ${block.imageSpacing || defaultImageSpacing}`}>
 							{/* Hvis der findes en mobil-variant, bruges den på mobil; ellers bruges standard imageSrc. */}
 							{resolvedImageSrc ? (
-								<img src={resolvedImageSrc} alt={block.imageAlt || ""} className="block max-w-full h-auto" />
+								<img src={resolvedImageSrc} alt={block.imageAlt || ""} loading="lazy" className="block max-w-full h-auto" />
 							) : null}
 						</div>
 						<div className="text-container w-full text-left">
