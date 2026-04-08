@@ -72,7 +72,10 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-
+html{
+  /* Reserverer plads til scrollbar, så layoutet ikke bliver bredere end viewporten. */
+  scrollbar-gutter: stable;
+}
 
 /* sikrer at footeren altid er i bunden */
 #root{
