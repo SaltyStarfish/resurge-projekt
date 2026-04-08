@@ -44,7 +44,7 @@ function CeraceraView() {
       </div>
   
       <div className="mt-24 space-y-10">
-        <h2 className="text-3xl md:text-5xl font-medium">
+        <h2 className="font-h2 mb-7.5">
           Før og efter
         </h2>
 
