@@ -50,7 +50,7 @@ function KontaktView() {
           value={formData.navn}
           onChange={handleChange}
           placeholder="Skriv dit navn her" 
-          className="border-2 border-[#722E3C] rounded-md mb-4"
+          className="border-2 border-[#722E3C] rounded-md mb-4 p-2"
        />
 
           <label htmlFor="telefon" className="text-[#2B2B2B]">Telefon:</label>
@@ -61,7 +61,7 @@ function KontaktView() {
           value={formData.telefon}
           onChange={handleChange}
           placeholder="Hvilket nummer må vi kontakte dig på?" 
-          className="border-2 border-[#722E3C] rounded-md mb-4" 
+          className="border-2 border-[#722E3C] rounded-md mb-4 p-2" 
           />
 
           <label htmlFor="email" className="text-[#2B2B2B]">E-mail:</label>
@@ -72,7 +72,7 @@ function KontaktView() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Skriv din e-mailadresse her" 
-          className="border-2 border-[#722E3C] rounded-md mb-4" />
+          className="border-2 border-[#722E3C] rounded-md mb-4 p-2" />
 
           <label htmlFor="besked" className="text-[#2B2B2B]">Besked:</label>
           <textarea 
@@ -96,13 +96,14 @@ function KontaktView() {
 
       { /* Popup */ }
       {popupVisible && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/50">
-          <div className="bg-[#CEBC98] border-4 border-[#722E3C] rounded-lg p-6 relative w-[#300px] text-center">
+        <div className="fixed inset-0 flex items-center justify-center bg-black/40 pb-20">
+          <div className="bg-[#CEBC98] border-2 border-[#722E3C] rounded-xl shadow-lg p-12 relative w-[400px] text-center">
 
             <p className="font-body font-medium">Tak for din besked! Vi vender tilbage til dig snarest muligt.</p>
             
-            <button onClick={() => setPopupVisible(false)} className="bg-[#722E3C] text-white py-2 px-4 rounded">
-              x
+            <button onClick={() => setPopupVisible(false)} 
+            className="absolute top-3 right-3 w-10 h-10 bg-[#383727]/20 border-2 border-[#722E3C] rounded-full text-[#722E3C] flex items-center justify-center text-3xl">
+              X
             </button>   
           </div>
         </div>
