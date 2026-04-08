@@ -80,7 +80,7 @@ function KontaktView() {
           required 
           value={formData.besked}
           onChange={handleChange}
-          placeholder="Fortæl os gerne, hvilken ydelse du har brug for. Vi glæder os til at høre fra dig" className="border-2 border-[#722E3C] rounded-md mb-4"
+          placeholder={`Fortæl os gerne, hvilken ydelse du har brug for.\n\nVi glæder os til at høre fra dig`} className="border-2 border-[#722E3C] rounded-md mb-4"
           rows="5"
           />
           
@@ -89,9 +89,24 @@ function KontaktView() {
             <button type="submit" className="py-1 px-6 flex justify-center">Send besked</button>
           </CtaKnap>
           </div>
-          
+
         </form>
       </div>
+
+
+      { /* Popup */ }
+      {popupVisible && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black/50">
+          <div className="bg-[#CEBC98] border-4 border-[#722E3C] rounded-lg p-6 relative w-[#300px] text-center">
+
+            <p className="font-body font-medium">Tak for din besked! Vi vender tilbage til dig snarest muligt.</p>
+            
+            <button onClick={() => setPopupVisible(false)} className="bg-[#722E3C] text-white py-2 px-4 rounded">
+              x
+            </button>   
+          </div>
+        </div>
+      )}
     </>
   )
 }
