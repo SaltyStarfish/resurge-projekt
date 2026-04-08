@@ -1,11 +1,10 @@
 // Husk at importere alle Links og Components, der referes til
-import { Link } from "react-router-dom";
-
 import Container from "../components/Container"
 import PriceCardSection from "../components/PriceCardSection"
 import CaseCard from "../components/CaseCard"
 import placeHolder from "../assets/images/placeholder.png"
 import CtaLink from "../components/CtaLink"
+import CtaKnap from "../components/CtaKnap"
 
 
 function YdelserView() {
@@ -51,18 +50,20 @@ function YdelserView() {
             </h2>
           </div>
         </Container>
-        <div className="max-w-[95vw]">
+        <div className="max-w-full">
           <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar">
             <PriceCardSection/>
           </div>
         </div>
         <Container>
           <p className="mb-10 mt-15">Skal vi give dit website et performance-løft eller bringe dine web-ideer til live? Så kontakt os i dag for en uforpligtende snak og et godt tilbud.</p>
-          <p className="justify-self-center mx-auto">Kontakt</p>
+          <CtaKnap>
+            <p>Kontakt</p>
+          </CtaKnap>
           <h2 className="font-h2 mt-[105px] mb-2.5">Tidligere cases</h2>
           <p className="font-body">Se eksempler på nogle af vores tidligere løsninger her:</p>
         </Container>
-        <div className="max-w-[95vw]">
+        <div className="max-w-full">
           <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar mb-[105px] mt-20">
             <div className="flex gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar px-6 md:px-12 lg:px-20">
               {cases.map((item, index) => (
