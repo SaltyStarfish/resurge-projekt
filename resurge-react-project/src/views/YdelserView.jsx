@@ -37,41 +37,56 @@ function YdelserView() {
 
   return (
     <>
-      <Container>
-        <section className="mt-[105px] mb-15">
-          <h1 className="font-h1 font-medium mb-4">Personligt tilpassede løsninger</h1>
-          <p className="font-h3 font-medium mb-6">
-            Til dig og din virksomhed.
-          </p>
-        </section>
-        <div className="mt-[105px] mb-15">
-          <h2 className="font-h3 font-medium">
-            Vores mest populære løsninger:
-          </h2>
+      <div className="overflow-x-hidden">
+        <Container>
+          <section className="mt-[105px] mb-15">
+            <h1 className="font-h1 font-medium mb-4">Personligt tilpassede løsninger</h1>
+            <p className="font-body font-medium mb-6">
+              Til din virksomhed og dit budget.
+            </p>
+          </section>
+          <div className="mt-[105px] mb-15">
+            <h2 className="font-h3 font-medium">
+              Vores mest populære løsninger:
+            </h2>
+          </div>
+        </Container>
+        <div className="max-w-[95vw]">
+          <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar">
+            <PriceCardSection/>
+          </div>
         </div>
-          <PriceCardSection/>
-        <p className="mb-10 mt-15">Skal vi give dit website et performance-løft eller bringe dine web-ideer til live? Så kontakt os i dag for en uforpligtende snak og et godt tilbud.</p>
-        <p className="justify-self-center mx-auto">Kontakt</p>
-        <h2 className="font-h2">Tidligere cases</h2>
-        <p className="font-body">Se eksempler på nogle af vores tidligere løsninger her:</p>
-        <div className="grid md:grid-cols-3 gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar mt-20 mb-[105px]">
-          {cases.map((item, index) => (
-            <CaseCard
-              key={index}
-              title={item.title}
-              tags={item.tags}
-              image={item.image}
-              link={item.link}
-            />
-          ))}
+        <Container>
+          <p className="mb-10 mt-15">Skal vi give dit website et performance-løft eller bringe dine web-ideer til live? Så kontakt os i dag for en uforpligtende snak og et godt tilbud.</p>
+          <p className="justify-self-center mx-auto">Kontakt</p>
+          <h2 className="font-h2 mt-[105px] mb-2.5">Tidligere cases</h2>
+          <p className="font-body">Se eksempler på nogle af vores tidligere løsninger her:</p>
+        </Container>
+        <div className="max-w-[95vw]">
+          <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar mb-[105px] mt-20">
+            <div className="flex gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar px-6 md:px-12 lg:px-20">
+              {cases.map((item, index) => (
+                <div key={index} className="w-70 md:w-100 flex-shrink-0">
+                  <CaseCard
+                    title={item.title}
+                    tags={item.tags}
+                    image={item.image}
+                    link={item.link}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        <section className="mb-[105px]">
-          <h2 className="font-h2 mb-7.5">Vi skaber optimerede websites skræddersyet til dig og din virksomhed</h2>
-          <p className="font-body mb-9">Hos Resurge er der ikke langt fra ideer til virkelighed. Vi hjælper små og mellemstore virksomheder med at opbygge nye websites eller optimere eksisterende sites. Og så er vi specialister i webperformance og arbejder med det i alle vores løsninger. </p>
-          <p className="font-body mb-10">Performance handler om mængden af data, der skal indlæses, når en kunde vil besøge dit website. Overflødig data loader langsommere, og de færreste kunder vil bruge tid på et langsomt website. Når vi performance-optimerer, får vi websitet til at fylde så lidt som muligt og loade hurtigere. Det giver de besøgende en bedre oplevelse, rangerer bedre på Google, kræver mindre strøm fra brugerens mobil eller computer og udleder mindre CO2. Alt sammen til en aftalt lav pris. </p>
-          <CtaLink to={"/blog"}>Læs mere</CtaLink>
-        </section>
-      </Container>
+        <Container>
+          <section className="mb-[105px]">
+            <h2 className="font-h2 mb-7.5">Vi skaber optimerede websites skræddersyet til dig og din virksomhed</h2>
+            <p className="font-body mb-9">Hos Resurge er der ikke langt fra ideer til virkelighed. Vi hjælper små og mellemstore virksomheder med at opbygge nye websites eller optimere eksisterende sites. Og så er vi specialister i webperformance og arbejder med det i alle vores løsninger. </p>
+            <p className="font-body mb-10">Performance handler om mængden af data, der skal indlæses, når en kunde vil besøge dit website. Overflødig data loader langsommere, og de færreste kunder vil bruge tid på et langsomt website. Når vi performance-optimerer, får vi websitet til at fylde så lidt som muligt og loade hurtigere. Det giver de besøgende en bedre oplevelse, rangerer bedre på Google, kræver mindre strøm fra brugerens mobil eller computer og udleder mindre CO2. Alt sammen til en aftalt lav pris. </p>
+            <CtaLink to={"/blog"}>Læs mere</CtaLink>
+          </section>
+        </Container>
+      </div>
     </>
   )
 }
