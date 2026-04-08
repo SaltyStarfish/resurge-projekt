@@ -72,17 +72,25 @@
   scrollbar-width: none;  /* Firefox */
 }
 
+
+
+/* sikrer at footeren altid er i bunden */
 html{
-  /* Reserverer plads til scrollbar, så layoutet ikke bliver bredere end viewporten. */
+  /* Reserve scrollbar space to prevent 100vw-style overshoot on Windows/mobile emulation. */
   scrollbar-gutter: stable;
 }
 
-/* sikrer at footeren altid er i bunden */
 #root{
   min-height: 100vh;
   display: grid; 
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto 1fr auto; 
 }
+
+#root > *{
+  min-width: 0;
+}
+
 body{
   background-color: #939577;
 }
