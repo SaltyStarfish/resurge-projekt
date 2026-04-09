@@ -2,7 +2,7 @@
 
 export default function CtaKnap({ children }) {
   return (
-    <div className="font-h3 font-medium text-[#722E3C] border-2 rounded-[30px] overflow-hidden transition-colors duration-300 hover:text-white">
+    <div className="text-xl md:text-[26px] font-medium text-[#722E3C] border-2 rounded-[30px] overflow-hidden transition-colors duration-300 hover:text-white">
       {children}
     </div>
   );
