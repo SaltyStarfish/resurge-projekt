@@ -2,7 +2,7 @@ import smallPlaceholder from "../assets/images/SmallPlaceholder.png";
 import Sektion3 from "../components/Sektion3";
 import placeHolder from "../assets/images/placeholder.png";
 import Container from "../components/Container";
-import PriceCardSection from "../components/PriceCardSection";
+import ScrollablePriceCards from "../components/ScrollablePriceCards";
 import CaseCard from "../components/CaseCard";
 import CtaLink from "../components/CtaLink";
 import Værdier from "../components/Værdier";
@@ -72,7 +72,7 @@ function ForsideView() {
         </Container>
         <div className="max-w-screen">
           <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar">
-            <PriceCardSection/>
+            <ScrollablePriceCards/>
           </div>
         </div>
         <Container>
