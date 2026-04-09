@@ -7,22 +7,18 @@ import CtaLink from "../components/CtaLink";
 import Værdier from "../components/Værdier";
 import info4x4 from "../assets/images/info4x4.svg";
 import ScrollableCaseCards from "../components/ScrollableCaseCards";
+import forsideIkon from "../assets/images/forside ikon.svg";
 
 
 
 function ForsideView() {
     const blocks = [
-    { imageSrc: smallPlaceholder, imageAlt: "placeholder", 
-      text: "Et simpelt website er et hurtigt website. Holder du siden simpel, så brugeren undgår unødige klik og omveje, giver det både en bedre brugeroplevelse og en bedre performance på dit site.\n Jo færre trin der er til et køb eller at kontakte dig, desto mere sandsynligt er det, at brugeren faktisk gør det. Benyt derfor klare menuer og struktur samt tydelige call to actions, så det er klart for brugeren, hvor der skal klikkes.  ", 
-      reverse: false, readMoreLink: "/ydelser" },
+      { imageSrc: forsideIkon, imageAlt: "placeholder", title: "Gør det nemt at finde rundt", text: "Et simpelt website er et hurtigt website. Holder du siden simpel, så brugeren undgår unødige klik og omveje, giver det både en bedre brugeroplevelse og en bedre performance på dit site.\n Jo færre trin der er til et køb eller at kontakte dig, desto mere sandsynligt er det, at brugeren faktisk gør det. Benyt derfor klare menuer og struktur samt tydelige call to actions, så det er klart for brugeren, hvor der skal klikkes.  ", reverse: false, readMoreLink: "/ydelser" },
     ];
 
     const forsideVaerdiBlocks = [
       {
-        title: "vores grundsøjler",
-        imageSrc: info4x4,
-        imageAlt: "infographic om vores grundsojler",
-        imageSpacing: "pt-[30px] pb-0 md:pt-[80px] md:pb-[60px]"
+        title: "vores grundsøjler", imageSrc: info4x4, imageAlt: "infographic om vores grundsojler", imageSpacing: "pt-[30px] pb-0 md:pt-[80px] md:pb-[60px]"
       },
     ];
     
