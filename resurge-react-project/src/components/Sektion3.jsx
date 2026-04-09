@@ -12,6 +12,7 @@ import forsideIkon from "../assets/images/forside ikon.svg";
 import stine from "../assets/images/stine-69d574236ff46.webp";
 import sarah from "../assets/images/sarah-69d5742328640.webp";
 import isabella from "../assets/images/isabella-69d5742319ce2.webp";
+import AnimationBatteri from "./AnimationBatteri";
 
 export default function Sektion3({
     blocks = [
@@ -78,6 +79,7 @@ export default function Sektion3({
                     className={`child-container w-full flex items-start gap-y-[30px] md:gap-y-0 md:gap-x-[110px] flex-col ${block.reverse ? "md:flex-row-reverse" : "md:flex-row"}`}
                 >
                     <div className={`image-container ${block.imageSize || "w-[300px] h-[300px] max-w-full"} flex items-center justify-center shrink-0 self-center md:items-start md:justify-start md:self-start rounded-[25px] overflow-hidden`}>
+                        {block.animation ? (<AnimationBatteri/>) : null}
                         {block.imageSrc ? (
                             <img src={block.imageSrc} alt={block.imageAlt || ""} loading="lazy" className={`w-full h-full ${block.imageSrc === sarah || block.imageSrc === isabella || block.imageSrc === stine ? "object-cover" : "object-contain"} object-top rounded-[25px]`} />
                         ) : null}
