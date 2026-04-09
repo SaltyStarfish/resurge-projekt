@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import info2x2_1 from "../assets/images/info2x2.1.svg";
 import info2x2_2 from "../assets/images/info2x2,2.svg";
-import infoLine1 from "../assets/images/infoline.svg";
+import info4x4 from "../assets/images/info4x4.svg";
 
 export default function Værdier({
 	blocks = [
 		{ title: "vores værdier", imageSrc: info2x2_2, mobileImageSrc: info2x2_1, imageAlt: "infographic om vores værdier" },
-		{ title: "vores grundsøjler", imageSrc: infoLine1, imageAlt: "infographic om vores grundsøjler" },
+		{ title: "vores grundsøjler", imageSrc: info4x4, imageAlt: "infographic om vores grundsøjler" },
 	],
 
 }) {
