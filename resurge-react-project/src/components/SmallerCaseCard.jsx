@@ -1,6 +1,6 @@
 import CtaLink from "./CtaLink";
 
-export default function CaseCard({ image, tags = [], title, description, link }) {
+export default function SmallerCaseCard({ image, tags = [], title, description, link }) {
   return (
     <div className="flex flex-col">
       <img src={image} alt={title} className="w-full w-[495] h-[374px] rounded-[20px] object-cover object-center mx-auto" />
@@ -11,12 +11,10 @@ export default function CaseCard({ image, tags = [], title, description, link })
         </p>
         )}
 
-      <div className="p-4 flex flex-col items-start text-left">
-        <h3 className="font-h3 font-medium mt-[60px]">{title}</h3>
-        <p className="font-body mt-[20px]">{description}</p>
-
-        <div className="mt-[40px]">
-          <CtaLink to={link}>Læs mere</CtaLink>
+      <div className="flex flex-col items-start text-left">
+        
+        <div className="mt-10">
+          <CtaLink to={link}><h3 className="inline font-h3 font-medium">{title}</h3></CtaLink>
         </div>
       </div>
     </div>
