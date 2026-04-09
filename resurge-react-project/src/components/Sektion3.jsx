@@ -60,7 +60,7 @@ export default function Sektion3({
     ],
 }) {
     const inlineTextLinkClasses = "font-inlinelink";
-    const readMoreLinkClasses = "inline-block mt-4 urbanist font-medium text-[26px] text-[#722E3C] transition-colors duration-300 hover:text-[#FFFFFF]";
+    const readMoreLinkClasses = "inline-block mt-4 urbanist font-medium text-xl md:text-[26px] text-[#722E3C] transition-colors duration-300 hover:text-[#FFFFFF]";
 
     return (
         <div className="parent-container flex justify-center items-center w-full max-w-[1102px] mx-auto my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
