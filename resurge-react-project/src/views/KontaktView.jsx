@@ -34,9 +34,23 @@ function KontaktView() {
 
   return (
     <>
+    <div className="w-full-2x mx-auto px-4">
       <h1 className="font-h1 font-medium mb-4">Kontakt os</h1>
 
-      <div className="flex justify-center w-full max-w-lg mx-auto">
+      {/*/ infoboks */}
+      <div className="bg-[#CEBC98] rounded-lg p-6 mb-6 shadow">
+        <h3 className="font-h3 mb-2">Skal vi tage en snak?</h3>
+        <p>+45 56 67 78 89</p>
+        <p>kontakt@resurge.dk</p>
+        <p>Åboulevarden 1, 8000 Aarhus</p>
+      </div>
+
+      
+
+
+
+        {/*/ kontaktformular */}
+        <div className="flex justify-center">
         <form onSubmit={handleSubmit}
          className="flex flex-col bg-[#CEBC98] shadow-lg rounded-lg p-8 w-full">
 
@@ -88,9 +102,10 @@ function KontaktView() {
           <CtaKnap>
             <button type="submit" className="py-1 px-6 flex justify-center">Send besked</button>
           </CtaKnap>
-          </div>
+          </div> 
 
         </form>
+        </div> 
       </div>
 
 
