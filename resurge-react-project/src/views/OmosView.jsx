@@ -1,8 +1,9 @@
 // Husk at importere alle Links og Components, der referes til
 import Værdier from "../components/Værdier"
 import Sektion3 from "../components/Sektion3"
-import smallPlaceholder from "../assets/images/SmallPlaceholder.png"
-import placeholder from "../assets/images/placeholder.png"
+import skraeddersyet from "../assets/images/skrædersyet.svg"
+import optimering from "../assets/images/optimering.svg"
+import co2 from "../assets/images/Co2.svg"
 import info2x2_1 from "../assets/images/info2x2.1.svg";
 import info2x2_2 from "../assets/images/info2x2,2.svg";
 import stine from "../assets/images/stine-69d574236ff46.webp";
@@ -13,16 +14,16 @@ import isabella from "../assets/images/isabella-69d5742319ce2.webp";
 function OmosView() {
   // All three blocks for OmosView
   const blocks = [
-    { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Skræddersyede løsninger", 
+    { imageSrc: skraeddersyet, imageAlt: "placeholder", title: "Skræddersyede løsninger", 
       text: "Alt for mange bureauer arbejder med tunge løsninger, som ikke er tilpasset den enkelte virksomhed. Som indsamler data, der aldrig bliver brugt, men kun fylder og bruger strøm. Eller udliciterer webproduktionen til andre lande, hvor du mister kontrollen og overblikket. Den tendens vil vi gøre op med\n Hos Resurge mener vi, at tingene skal gøres ordentligt, og til en overkommelig pris. Så du har kontrollen hele vejen igennem og får en webløsning, der er tilpasset dine behov, ikke bare en standardpakke. Websitet skal passe til din virksomhed her og nu og kan udvides, når din virksomhed vokser.",
       reverse: false },
-    { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Performanceoptimering", 
+    { imageSrc: optimering, imageAlt: "placeholder", title: "Performanceoptimering", 
       textBefore: "Når det overflødige skæres væk, bliver dit website automatisk lettere og performer bedre. Dertil kommer billed-, video- og typografi-optimering, som igen er med til at gøre dit website hurtigere - uden at gå på kompromis med kvaliteten. Vi holder os opdateret på den nyeste teknologi og de bedste værktøjer til at optimere både performance og energiforbrug. Vil du selv i gang? Læs vores, ", 
       linkText: "5 konkrete tips til bedre performance, ",
       linkTo: "/blog/fem-tips",
       textAfter: " hvor vi lister tiltag, du straks kan gå i gang med.",
       reverse: true },
-    { imageSrc: placeholder, imageAlt: "placeholder", title: "Reduceret CO2-aftryk", 
+    { imageSrc: co2, imageAlt: "placeholder", title: "Reduceret CO2-aftryk", 
       textBefore: "Klimabevidsthed fylder i arbejdstilgangen hos Resurge, og performance- og CO2-optimering går heldigvis hånd i hånd. Et website vil per definition aldrig blive bæredygtigt, og man siger, at det eneste bæredygtige website er et website, som ikke eksisterer. Med det i mente tror vi, at det mindst bæredygtige website er et website, som ikke opfylder dets formål. Derfor er det vores topprioritet at skabe effektive webløsninger, som skaber værdi for virksomheder og deres kunder. Samtidig arbejder vi aktivt med at gøre websites mindre datatunge for at opnå en bedre brugeroplevelse, højere performance og et mindre CO2-aftryk. Du finder konkrete råd i vores",
       linkText: "guides til bedre performance og lavere CO2-aftryk",
       linkTo: "/blog",
