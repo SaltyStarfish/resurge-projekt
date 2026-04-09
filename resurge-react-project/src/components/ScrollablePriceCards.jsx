@@ -1,12 +1,13 @@
 // Husk at importere alle Links og Components, der referes til
-import PriceCardItem from '../components/PriceCardItem';
+import PriceCardItem from './PriceCardItem';
 // import logo from '../assets/images/placeholder.png';
 import bgOptimering from "../assets/images/card-optimering.svg"
 import bgHjemmeside from "../assets/images/card-hjemmeside.svg"
 import bgWebshop from "../assets/images/card-webshop.svg"
+import ScrollableCards from './ScrollableCardSection';
 
 
-function PriceCardSection() {
+function ScrollablePriceCards() {
 
 const cards = [
   {
@@ -31,13 +32,13 @@ const cards = [
 
   return (
     <>
-      <div className='flex gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar px-6 md:px-12 lg:px-20'>
+      <ScrollableCards>
         {cards.map((card, index) => (
           <PriceCardItem key={index} {...card}/>
         ))}
-      </div>
+      </ScrollableCards>
     </>
   )
 }
 
-export default PriceCardSection
+export default ScrollablePriceCards

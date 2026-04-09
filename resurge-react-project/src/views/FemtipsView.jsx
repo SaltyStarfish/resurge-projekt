@@ -14,7 +14,7 @@ function FemtipsView() {
       { imageSrc: billedeOptimering, imageAlt: "billede optimering", title: "Optimer dine billeder", 
         text: "Billeder kan hurtigt blive en stor strømsluger, især hvis du ikke sørger for at optimere dem. Brug lette formater som AVIF eller WebP til fotos og SVG til logo og illustrationer. Sørg også for at reducere billedstørrelsen, så de ikke er større, end formatet de skal vises i. Du kan fx komprimere dine billeder online med Squoosh eller bruge et WordPress-plugin såsom ShortPixel.\n Derudover anbefaler vi at bruge lazy-loading, så billederne først indlæses, når de skal vises. Et andet tip er at reducere antallet af farver eller gøre billederne en smule mindre skarpe i kanterne. Overvej også, om antallet af billeder på sitet kan reduceres. Ønsker du at erstatte dem med noget, kan du fx bruge simple grafiske elementer i stedet.", 
         reverse: true },
-      { imageSrc: smallPlaceholder, imageAlt: "placeholder", title: "Vælg mørke og rolige farver", 
+      { animation: true, title: "Vælg mørke og rolige farver", 
         text: "Farver er ikke blot et spørgsmål om æstetik, men de påvirker også din sides performance. Mørkere farver bruger generelt mindre strøm og det er en god idé at undgå store flader, der er helt hvide eller i klare blå nuancer, da disse er de mest energikrævende. Du kan eksempelvis skabe kontrast og blikfang ved at kombinere en mørk baggrund med afdæmpede lyse tekstfarver. Desuden gør et enkelt farvevalg ikke blot siden hurtigere, men det er ofte også mere behageligt at kigge på.", 
         reverse: false },
       { imageSrc: fontGraphic, imageAlt: "font graphic", title: "Brug få og lette skrifttyper", 
