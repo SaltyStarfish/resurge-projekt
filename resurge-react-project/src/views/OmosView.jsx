@@ -9,6 +9,7 @@ import info2x2_2 from "../assets/images/info2x2,2.svg";
 import stine from "../assets/images/stine-69d574236ff46.webp";
 import sarah from "../assets/images/sarah-69d5742328640.webp";
 import isabella from "../assets/images/isabella-69d5742319ce2.webp";
+import Container from "../components/Container"
 
 
 function OmosView() {
@@ -50,15 +51,24 @@ function OmosView() {
   ];
 
   return (
-    <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto mb-8 md:mb-12 px-4 sm:px-6 md:px-0 flex-col gap-10 md:gap-[105px]">
-      {/* Opret sidens indhold herunder som "normal HTML" eller referer til components */}
-      <h1 className="font-h1 font-medium my-[105px]">Om os</h1>
-      <Værdier blocks={vaerdiBlocks} />
-      <Sektion3 blocks={firstSektionBlocks} />
-      <h2 className="font-h2 font-medium mb-0">Mød vores seje hold</h2>
-      <Sektion3 blocks={teamSektionBlocks} />
+    <>
+      <Container>
+        <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4 sm:px-6 md:px-0 my-[105px]">
+          <h1 className="font-h1 font-medium">Om os</h1>
+          <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
+            <Værdier blocks={vaerdiBlocks} />
+          </div>
+          <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]" >
+            <Sektion3 blocks={firstSektionBlocks} />
+          </div>
+          <div lassName="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
+            <h2 className="font-h2 font-medium mb-0">Mød vores seje hold</h2>
+            <Sektion3 blocks={teamSektionBlocks} />        
+          </div>
+        </div>
+      </Container>
       
-    </div>
+    </>  
   )
 }
 
