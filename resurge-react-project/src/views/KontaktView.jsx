@@ -35,14 +35,19 @@ function KontaktView() {
   return (
     <>
     <div className="w-full-2x mx-auto px-4">
-      <h1 className="font-h1 font-medium mb-4">Kontakt os</h1>
+      <section className="mb-16">
+        <h1 className="font-h1 font-medium mb-4">Kontakt os</h1>
+        <p className="urbanist text-[30px] mb-6">
+          Har du et projekt, en idé eller blot et spørgsmål? Hiv fat i os, og få et uforpligtende tilbud.
+        </p>
+      </section>
 
       {/*/ infoboks */}
-      <div className="bg-[#CEBC98] rounded-lg p-6 mb-6 shadow">
-        <h3 className="font-h3 mb-2">Skal vi tage en snak?</h3>
-        <p>+45 56 67 78 89</p>
-        <p>kontakt@resurge.dk</p>
-        <p>Åboulevarden 1, 8000 Aarhus</p>
+      <div className="bg-[#CEBC98] rounded-lg p-10 mb-6 shadow">
+        <h2 className="font-h2 mb-4">Skal vi tage en snak?</h2>
+        <p className="font-body">Telefon: +45 56 67 78 89</p>
+        <p className="font-body">E-mail: <a href="mailto:kontakt@resurge.dk" className="text-[#722E3C] hover:underline">kontakt@resurge.dk</a></p>
+        <p className="font-body">Adresse: Åboulevarden 1, 8000 Aarhus</p>
       </div>
 
       
