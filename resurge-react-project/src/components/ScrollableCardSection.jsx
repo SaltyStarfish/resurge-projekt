@@ -7,7 +7,7 @@ function ScrollableCards({ children }) {
     <>
       <div className="max-w-screen">
               <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar mb-10 mt-10">
-                <div className="flex gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar px-6 md:px-12 lg:px-20">
+                <div className="flex gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar px-6 py-2 md:px-12 lg:px-20">
                   {children}
                 </div>
               </div>
