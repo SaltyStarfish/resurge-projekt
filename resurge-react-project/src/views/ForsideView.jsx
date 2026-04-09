@@ -6,7 +6,7 @@ import PriceCardSection from "../components/PriceCardSection";
 import CaseCard from "../components/CaseCard";
 import CtaLink from "../components/CtaLink";
 import Værdier from "../components/Værdier";
-import infoLine1 from "../assets/images/infoline.svg";
+import info4x4 from "../assets/images/info4x4.svg";
 
 
 
@@ -46,7 +46,7 @@ function ForsideView() {
     const forsideVaerdiBlocks = [
       {
         title: "vores grundsøjler",
-        imageSrc: infoLine1,
+        imageSrc: info4x4,
         imageAlt: "infographic om vores grundsojler",
         imageSpacing: "pt-[30px] pb-0 md:pt-[80px] md:pb-[60px]"
       },

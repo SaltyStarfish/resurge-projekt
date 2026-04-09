@@ -50,7 +50,7 @@ function OmosView() {
   ];
 
   return (
-    <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-8 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-10 md:gap-[105px]">
+    <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto mb-8 md:mb-12 px-4 sm:px-6 md:px-0 flex-col gap-10 md:gap-[105px]">
       {/* Opret sidens indhold herunder som "normal HTML" eller referer til components */}
       <h1 className="font-h1 font-medium my-[105px]">Om os</h1>
       <Værdier blocks={vaerdiBlocks} />
