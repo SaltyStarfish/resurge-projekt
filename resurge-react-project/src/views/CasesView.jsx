@@ -39,16 +39,15 @@ export default function CasesView() {
 
   return (
     <Container>
+      <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4 sm:px-6 md:px-0 my-[105px]">
 
-      <section className="mb-16">
-        <h1 className="font-h1 font-medium mb-4">Cases</h1>
-        <p className="urbanist text-[30px] mb-6">
+      <h1 className="font-h1 font-medium">Cases</h1>
+        <p className="urbanist text-[30px] mt-[40px]">
           Hos Resurge specialiserer vi os i skræddersyede, energieffektive
           webløsninger. Se et udpluk af vores cases herunder.
         </p>
-      </section>
 
-      <section className="grid gap-12 md:grid-cols-2">
+      <div className="grid md:grid-cols-2 gap-[80px] mt-[105px]">
         {cases.map((item, index) => (
           <CaseCard
             key={index}
@@ -59,7 +58,8 @@ export default function CasesView() {
             link={item.link}
           />
         ))}
-      </section>
+      </div>
+      </div>
     </Container>
   );
 }

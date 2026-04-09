@@ -34,27 +34,21 @@ function BlogView() {
   ];
 
   return (
-    <div className="blog py-12">
-      <Container>
-        {/* Intro */}
-        <section className="blog-intro mb-16">
-          <h1 className="font-h1 font-medium mb-4">
-            Inspiration og guides
-          </h1>
-          <p className="urbanist text-[30px]">
-            Her har vi samlet vores praktiske tips til et hurtigere og mere
-            energieffektivt website
-          </p>
-        </section>
+    <Container>
+      <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4    sm:px-6 md:px-0 my-[105px]">
+          <h1 className="font-h1 font-medium">Inspiration og guides</h1>
+            <p className="urbanist text-[30px] mt-[40px]">
+              Her har vi samlet vores praktiske tips til et hurtigere og mere energieffektivt website
+            </p>
 
-        {/* Blogoversigt */}
-        <div className="space-y-20">
-          {blogPosts.map((post, i) => (
-            <FiftyFifty key={i} type={post.type} indhold={post} reverse={post.reverse} />
+          {/* Blogoversigt */}
+          <div className="flex flex-col gap-[80px] mt-[105px]">
+            {blogPosts.map((post, i) => (
+              <FiftyFifty key={i} type={post.type} indhold={post} reverse={post.reverse} />
           ))}
         </div>
-      </Container>
-    </div>
+      </div>
+    </Container>
   );
 }
 
