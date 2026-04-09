@@ -27,7 +27,7 @@ function YdelserView() {
         </Container>
           <ScrollablePriceCards/>
         <Container>
-          <p className="mb-10 mt-15">Skal vi give dit website et performance-løft eller bringe dine web-ideer til live? Så kontakt os i dag for en uforpligtende snak og et godt tilbud.</p>
+          <p className="font-body mb-10 mt-15">Skal vi give dit website et performance-løft eller bringe dine web-ideer til live? Så kontakt os i dag for en uforpligtende snak og et godt tilbud.</p>
           <div className="max-w-105 mx-auto">
             <CtaKnap>
               <Link className={"py-1 px-6 flex justify-center bg-[#CEBC9833]"} to={"/kontakt"}>Kontakt</Link>
