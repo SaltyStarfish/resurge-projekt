@@ -6,7 +6,7 @@ export default function CaseCard({ image, tags = [], title, description, link })
       <img src={image} alt={title} className="w-full max-w-[500px] max-h-[500px] object-cover mx-auto" />
       
       {tags.length > 0 && (
-        <p className="p-4 font-medium text-[#20px] italic verdana">
+        <p className="font-tag font-medium">
           {tags.join(" | ")}
         </p>
         )}
