@@ -1,6 +1,4 @@
-import smallPlaceholder from "../assets/images/SmallPlaceholder.png";
 import Sektion3 from "../components/Sektion3";
-import placeHolder from "../assets/images/placeholder.png";
 import Container from "../components/Container";
 import ScrollablePriceCards from "../components/ScrollablePriceCards";
 import CtaLink from "../components/CtaLink";
@@ -13,7 +11,7 @@ import forsideIkon from "../assets/images/forside ikon.svg";
 
 function ForsideView() {
     const blocks = [
-      { imageSrc: forsideIkon, imageAlt: "placeholder", title: "Gør det nemt at finde rundt", text: "Et simpelt website er et hurtigt website. Holder du siden simpel, så brugeren undgår unødige klik og omveje, giver det både en bedre brugeroplevelse og en bedre performance på dit site.\n Jo færre trin der er til et køb eller at kontakte dig, desto mere sandsynligt er det, at brugeren faktisk gør det. Benyt derfor klare menuer og struktur samt tydelige call to actions, så det er klart for brugeren, hvor der skal klikkes.  ", reverse: false, readMoreLink: "/ydelser" },
+      { imageSrc: forsideIkon, imageAlt: "Åben bog med lysende pærer", text: "I en verden hvor dataforbruget blot vokser, og stadigt mere af vores hverdag foregår digitalt, er optimering alfa og omega. Hos Resurge har vi skabt et vidensunivers, hvor vi deler indsigter, guides og konkrete værktøjer, der hjælper dig med at optimere din hjemmeside.", reverse: false, readMoreLink: "/blog" },
     ];
 
     const forsideVaerdiBlocks = [
@@ -34,7 +32,7 @@ function ForsideView() {
         </Container>
         <div className="overflow-x-hidden">
           <Container>
-            <section className="mb-[105px]">
+            <section className="mb-20">
               <h2 className="font-h2 mb-7.5">Et bud på en budgetvenlig løsning</h2>
               <p className="font-body mb-9">Hos Resurge tilbyder vi skræddersyede digitale løsninger, der passer til dit budget. Godt webdesign behøver nemlig ikke være dyrt. </p>
               <p className="font-body mb-10">Performance-optimering er vores speciale. Vi sørger for, at din hjemmeside ikke blot ser godt ud, men loader hurtigt, konverterer bedre og performer bedre på Google. Vi udvikler løsninger med fokus på lavere energiforbrug og effektiv drift.</p>
@@ -43,13 +41,13 @@ function ForsideView() {
           <ScrollablePriceCards/>
           <Container>
             <CtaLink to={"/ydelser"}>Læs mere</CtaLink>
-            <h2 className="font-h2 mt-[105px] mb-2.5">Brug for inspiration? <br /> Tag et kig på vores tidligere samarbejder</h2>
+            <h2 className="font-h2 mt-[105px] mb-20">Brug for inspiration? <br /> Tag et kig på vores tidligere samarbejder</h2>
           </Container>
           <ScrollableCaseCards/>
         </div>
         <Container>
-          <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]" >
-            <h2 className="font-h2 font-medium mb-0" >Her finder du mere viden om optimering</h2>
+          <div className="my-[105px]" >
+            <h2 className="font-h2 font-medium mb-20" >Her finder du mere viden om optimering</h2>
             <Sektion3 blocks={blocks} />
           </div>
         </Container>
