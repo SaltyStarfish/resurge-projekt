@@ -4,6 +4,7 @@ import PriceCardItem from './PriceCardItem';
 import bgOptimering from "../assets/images/card-optimering.svg"
 import bgHjemmeside from "../assets/images/card-hjemmeside.svg"
 import bgWebshop from "../assets/images/card-webshop.svg"
+import ScrollableCards from './ScrollableCardSection';
 
 
 function ScrollablePriceCards() {
@@ -31,15 +32,11 @@ const cards = [
 
   return (
     <>
-      <div className="max-w-screen">
-        <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar">
-          <div className='flex gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar px-6 md:px-12 lg:px-20'>
-            {cards.map((card, index) => (
-              <PriceCardItem key={index} {...card}/>
-            ))}
-          </div>
-        </div>
-      </div>
+      <ScrollableCards>
+        {cards.map((card, index) => (
+          <PriceCardItem key={index} {...card}/>
+        ))}
+      </ScrollableCards>
     </>
   )
 }

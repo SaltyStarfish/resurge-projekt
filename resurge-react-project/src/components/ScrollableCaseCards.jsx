@@ -1,6 +1,7 @@
 // Husk at importere alle Links og Components, der referes til
 import CaseCard from '../components/CaseCard';
 import placeHolder from "../assets/images/placeholder.png"
+import ScrollableCards from './ScrollableCardSection';
 
 
 function ScrollableCaseCards() {
@@ -33,9 +34,7 @@ function ScrollableCaseCards() {
 
   return (
     <>
-      <div className="max-w-screen">
-        <div className="mx-auto w-full max-w-max overflow-x-auto hide-scrollbar mb-[105px] mt-20">
-          <div className="flex gap-3 md:gap-7.5 overflow-x-auto hide-scrollbar px-6 md:px-12 lg:px-20">
+      <ScrollableCards>
             {cases.map((item, index) => (
               <div key={index} className="w-70 md:w-100 flex-shrink-0">
                 <CaseCard
@@ -46,9 +45,7 @@ function ScrollableCaseCards() {
                 />
               </div>
             ))}
-          </div>
-        </div>
-      </div>
+      </ScrollableCards>
     </>
   )
 }
