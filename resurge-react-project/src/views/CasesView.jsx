@@ -1,9 +1,9 @@
 import CaseCard from "../components/CaseCard"
 import Container from "../components/Container"
-import placeHolder from "../assets/images/placeholder.png"
 import ceraCera from "../assets/images/cera-cera-69d63e7cef9d6.webp"
 import kreuzbar from "../assets/images/kreubar-69d63e88a6a8c.webp"
 import oekofamilien from "../assets/images/oekofamilien-case.webp"
+import repare from "../assets/images/repare-case.webp"
 
 export default function CasesView() {
   const cases = [
@@ -18,7 +18,7 @@ export default function CasesView() {
     {
       title: "Repare",
       description: "WordPress-løsning og visuel identitet til nyopstartet B2B-virksomhed, hvor et enkelt design med et lavt klimaaftryk var i højsædet.",
-      image: placeHolder,
+      image: repare,
       tags: ["WordPress", "Websitelancering", "Visuel identitet", "Digital strategi", "Lavt Co2-aftryk", "B2B", "SEO"],
       link: "#"
     },
