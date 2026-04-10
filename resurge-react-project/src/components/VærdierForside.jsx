@@ -13,14 +13,14 @@ const defaultDesktopItems = [
 	{ imageSrc: boks4, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "white", linkTo: "/om-os#reduceret-co2-aftryk" },
 ];
 const defaultMobileItems = [
-	{ imageSrc: boks11, imageAlt: "optimal performance link", linkText: "optimal performance", linkColor: "white", linkTo: "/om-os#performance-optimering" },
-	{ imageSrc: boks12, imageAlt: "Skræddersyede løsninger link", linkText: "Skræddersyede løsninger", linkColor: "black", linkTo: "/om-os#skraeddersyede-losninger" },
-	{ imageSrc: boks13, imageAlt: "Konkurrence dygtige priser link", linkText: "Konkurrence dygtige priser", linkColor: "white", linkTo: "/ydelser#vores-mest-populaere-losninger" },
-	{ imageSrc: boks14, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "black", linkTo: "/om-os#reduceret-co2-aftryk" },
+	{ imageSrc: boks1, imageAlt: "optimal performance link", linkText: "optimal performance", linkColor: "white", linkTo: "/om-os#performance-optimering" },
+	{ imageSrc: boks1, imageAlt: "Skræddersyede løsninger link", linkText: "Skræddersyede løsninger", linkColor: "black", linkTo: "/om-os#skraeddersyede-losninger" },
+	{ imageSrc: boks1, imageAlt: "Konkurrence dygtige priser link", linkText: "Konkurrence dygtige priser", linkColor: "white", linkTo: "/ydelser#vores-mest-populaere-losninger" },
+	{ imageSrc: boks1, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "black", linkTo: "/om-os#reduceret-co2-aftryk" },
 ];
 
 export default function VærdierForside({
-	title = "vores grundsøjler",
+	title = "Hos os for du...",
 	items = defaultDesktopItems,
 	mobileItems = defaultMobileItems,
 }) {

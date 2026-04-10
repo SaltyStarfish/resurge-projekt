@@ -2,15 +2,9 @@ import Sektion3 from "../components/Sektion3";
 import Container from "../components/Container";
 import ScrollablePriceCards from "../components/ScrollablePriceCards";
 import CtaLink from "../components/CtaLink";
-
-import boks1 from "../assets/images/boks1-69d89c357f19f-69d8a4f8652db.webp";
-import boks2 from "../assets/images/boks2-69d89c316d34f-69d8a4f81b5b9.webp";
-import boks3 from "../assets/images/boks-3-69d89c3e707f7-69d8a4f81b6bb.webp";
-import boks4 from "../assets/images/boks-4-69d89c38d55fc-69d8a4f85bece.webp";
 import ScrollableCaseCards from "../components/ScrollableCaseCards";
 import forsideIkon from "../assets/images/forside ikon.svg";
-
-
+import VærdierForside from "../components/VærdierForside";
 
 
 function ForsideView() {
@@ -25,9 +19,10 @@ function ForsideView() {
         <Container>
           <h1 className="font-h1 font-medium my-[105px]">Resurge</h1>
         </Container>
+
         <Container>
           <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
-
+            <VærdierForside />
           </div>
         </Container>
         <div className="overflow-x-hidden">

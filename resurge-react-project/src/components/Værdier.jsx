@@ -5,7 +5,7 @@ import info4x4 from "../assets/images/info4x4.svg";
 
 export default function Værdier({
   blocks = [
-    { title: "vores værdier", imageSrc: info2x2_2, mobileImageSrc: info2x2_1, imageAlt: "infographic om vores værdier" },
+    { title: "hos os", imageSrc: info2x2_2, mobileImageSrc: info2x2_1, imageAlt: "infographic om vores værdier" },
   ],
 }) {
 	// Holder styr på om viewport er mobil-størrelse, så billedkilden kan skiftes pr. blok.
