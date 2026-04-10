@@ -1,6 +1,5 @@
 // Husk at importere alle Links og Components, der referes til
 import SmallerCaseCard from '../components/SmallerCaseCard';
-import placeHolder from "../assets/images/placeholder.png"
 import ScrollableCards from './ScrollableCardSection';
 import ceraCera from "../assets/images/cera-cera-69d63e7cef9d6.webp"
 import repare from "../assets/images/repare-case.webp"
@@ -43,7 +42,7 @@ function ScrollableCaseCards() {
     <>
       <ScrollableCards>
             {cases.map((item, index) => (
-              <div key={index} className="w-70 md:w-100 flex-shrink-0">
+              <div key={index} className="flex flex-col w-70 md:w-100 flex-shrink-0">
                 <SmallerCaseCard
                   title={item.title}
                   tags={item.tags}
