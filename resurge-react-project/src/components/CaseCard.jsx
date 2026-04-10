@@ -6,16 +6,16 @@ export default function CaseCard({ image, tags = [], title, description, link })
       <img src={image} alt={title} className="w-full w-[495] h-[374px] rounded-[20px] object-cover object-center mx-auto" />
       
       {tags.length > 0 && (
-        <p className="font-tag font-medium mt-[40px]">
+        <p className="font-tag font-medium mt-[20px]">
           {tags.join(" | ")}
         </p>
         )}
 
       <div className="p-4 flex flex-col items-start text-left">
-        <h3 className="font-h3 font-medium mt-[60px]">{title}</h3>
+        <h3 className="font-h3 font-medium mt-[30px]">{title}</h3>
         <p className="font-body mt-[20px]">{description}</p>
 
-        <div className="mt-[40px]">
+        <div className="mt-[20px]">
           <CtaLink to={link}>Læs mere</CtaLink>
         </div>
       </div>
