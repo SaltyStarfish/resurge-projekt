@@ -15,12 +15,12 @@ function YdelserView() {
         <Container>
           <section className="mt-15 md:mt-[105px] mb-15 md:mb-[105px]">
             <h1 className="font-h1 font-medium mb-4">Personligt tilpassede løsninger</h1>
-            <p className="font-body font-medium">
+            <p className="font-intro font-medium">
               Til din virksomhed og dit budget.
             </p>
           </section>
           <div className="mb-10 md:mb-20">
-            <h2 className="font-h3 font-medium">
+            <h2 className="font-h2 font-medium">
               Vores mest populære løsninger:
             </h2>
           </div>
