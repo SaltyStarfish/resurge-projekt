@@ -1,9 +1,9 @@
 import Sektion3 from "../components/Sektion3";
-import smallPlaceholder from "../assets/images/SmallPlaceholder.png";
 import video from "../assets/images/Video.svg";
 import billedeOptimering from "../assets/images/billede optimering.svg";
 import fontGraphic from "../assets/images/font.svg";
 import navigationGraphic from "../assets/images/navigation.svg";
+import Container from "../components/Container";
 
 
 function FemtipsView() {
@@ -26,10 +26,15 @@ function FemtipsView() {
       
     ];
   return (
-    <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-8 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-10 md:gap-[105px]">
-      <h1 className="font-h1 font-medium my-[105px]">5 perfor</h1>
-      <Sektion3 blocks={blocks} />
-    </div>
+    <>
+      <Container>
+        <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4 sm:px-6 md:px-0 my-[105px]">
+          <h1 className="font-h1 font-medium ]">5 performance tips</h1>
+          <p className="urbanist text-[30px] mt-[40px] my-[60px]">Hos Resurge har vi samlet de bedste måder, hvorpå du kan forbedre loadtid, konvertering og brugeroplevelse på dit site. Grebene er simple, og du kan gå i gang med dem allerede i dag.</p>
+            <Sektion3 blocks={blocks} />
+          </div>
+      </Container>
+    </> 
   )
 }
 
