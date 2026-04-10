@@ -34,9 +34,6 @@ function CeraceraView() {
     tekstHøjre: "CeraCeras design og branding er blevet mere professionel og sammenhængende. Vi har skabt en rød tråd mellem den fysiske butiks æstetik og det online univers.",
     },
   ];
-
-  const tekstFelter = indhold.slice(0, 2);
-  const billeder = indhold[2];
   
   return (
    <Container>
@@ -46,20 +43,18 @@ function CeraceraView() {
               Ny webshop til keramikværksted med fokus på enkel booking, nem vedligeholdelse af siden og en effektiv brugeroplevelse.
             </p>
 
-          <section className="my-15 md:my-[105px]">
+          <section className="mt-[105px]">
             <h2 className="font-h2 mb-3.75 md:mb-7.5">Webshop- og bookingløsning til aarhusiansk keramikværksted</h2>
             <p className="font-body mb-4.5 md:mb-9">CeraCera er et keramikværksted i Aarhus, der sælger egne kreationer og afholder keramikkurser. De ønskede en løsning, der i højere grad understøtter deres fysiske butik og gør det nemt for dem at håndtere både online salg og bookinger.</p>
           </section>
 
-        {tekstFelter.map((block, i) => (
-          <FiftyFifty key={i} type={block.type} indhold={block} />
-        ))}
+        <div className="flex flex-col gap-[80px] mt-[105px]">
+          {indhold.map((block, i) => (
+            <FiftyFifty key={i} type={block.type} indhold={block} />
+          ))}
+        </div>
+        
       </div>
-  
-      <div className="mt-24">
-        <FiftyFifty type={billeder.type} indhold={billeder} />
-      </div>
-
     </Container>
   )
 }
