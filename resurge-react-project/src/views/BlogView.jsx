@@ -1,12 +1,14 @@
 import FiftyFifty from "../components/FiftyFifty";
 import Container from "../components/Container";
-import placeHolder from "../assets/images/placeholder.png";
+import speedomenter from "../assets/images/speedometer-website-performance.svg"
+import vaegt from "../assets/images/vaegt–hastighed-paa-budget.svg"
+import hurtigtWebsite from "../assets/images/hurtigt-website-lavt-co2.svg"
 
 function BlogView() {
   const blogPosts = [
     {
       type: "billede-tekst",
-      billedeSrc: placeHolder,
+      billedeSrc: speedomenter,
       billedeAlt: "Blogindlæg 1",
       titel: "5 tips til at forbedre dit websites performance",
       tekst: "Optimer loadtid, konvertering og brugeroplevelsen med simple greb. Selv små ændringer kan gøre en stor forskel, både for dine brugere og dit klimaaftryk.",
@@ -15,7 +17,7 @@ function BlogView() {
     },
     {
       type: "billede-tekst",
-      billedeSrc: placeHolder,
+      billedeSrc: vaegt,
       billedeAlt: "Blogindlæg 2",
       titel: "Få mere ud af dit website uden at sprænge budgettet",
       tekst: "Du behøver ikke nødvendigvis et stort budget for at forbedre dit website. Vi guider her til, hvor du får mest ud af din indsats.",
@@ -24,7 +26,7 @@ function BlogView() {
     },
     {
       type: "billede-tekst",
-      billedeSrc: placeHolder,
+      billedeSrc: hurtigtWebsite,
       billedeAlt: "Blogindlæg 3",
       titel: "Derfor er et hurtigt website også et grønnere website",
       tekst: "Jo hurtigere dit website er, desto mindre energi udleder det. Se hvordan performance-optimering samtidig giver dig et mindre klimatungt site.",
@@ -37,7 +39,7 @@ function BlogView() {
     <Container>
       <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4    sm:px-6 md:px-0 my-[105px]">
           <h1 className="font-h1 font-medium">Inspiration og guides</h1>
-            <p className="urbanist text-[30px] mt-[40px]">
+            <p className="urbanist font-intro mt-[40px]">
               Her har vi samlet vores praktiske tips til et hurtigere og mere energieffektivt website
             </p>
 
