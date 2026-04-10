@@ -37,7 +37,7 @@ function BlogView() {
     <Container>
       <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4    sm:px-6 md:px-0 my-[105px]">
           <h1 className="font-h1 font-medium">Inspiration og guides</h1>
-            <p className="urbanist text-[30px] mt-[40px]">
+            <p className="urbanist font-intro mt-[40px]">
               Her har vi samlet vores praktiske tips til et hurtigere og mere energieffektivt website
             </p>
 

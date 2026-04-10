@@ -45,7 +45,7 @@ export default function CasesView() {
       <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4 sm:px-6 md:px-0 my-[105px]">
 
       <h1 className="font-h1 font-medium">Cases</h1>
-        <p className="urbanist text-[30px] mt-[40px]">
+        <p className="urbanist font-intro mt-[40px]">
           Hos Resurge specialiserer vi os i skræddersyede, energieffektive
           webløsninger. Se et udpluk af vores cases herunder.
         </p>

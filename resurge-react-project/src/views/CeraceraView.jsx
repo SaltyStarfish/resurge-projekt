@@ -36,8 +36,13 @@ function CeraceraView() {
   const billeder = indhold[2];
   
   return (
-    <Container>
-      <div className="space-y-20">
+   <Container>
+      <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4    sm:px-6 md:px-0 my-[105px]">
+          <h1 className="font-h1 font-medium">CeraCera</h1>
+            <p className="urbanist font-intro mt-[40px]">
+              Ny webshop til keramikværksted med fokus på enkel booking, nem vedligeholdelse af siden og en effektiv brugeroplevelse.
+            </p>
+
         {tekstFelter.map((block, i) => (
           <FiftyFifty key={i} type={block.type} indhold={block} />
         ))}
