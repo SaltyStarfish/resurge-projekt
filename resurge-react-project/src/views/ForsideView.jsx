@@ -2,7 +2,15 @@ import Sektion3 from "../components/Sektion3";
 import Container from "../components/Container";
 import ScrollablePriceCards from "../components/ScrollablePriceCards";
 import CtaLink from "../components/CtaLink";
-import Værdier from "../components/VærdierForside";
+import VærdierForside from "../components/VærdierForside";
+import boks1 from "../assets/images/boks1-69d89c357f19f-69d8a4f8652db.webp";
+import boks2 from "../assets/images/boks2-69d89c316d34f-69d8a4f81b5b9.webp";
+import boks3 from "../assets/images/boks-3-69d89c3e707f7-69d8a4f81b6bb.webp";
+import boks4 from "../assets/images/boks-4-69d89c38d55fc-69d8a4f85bece.webp";
+import boks1lille from "../assets/images/boks1lille-69d8be54e9d51.webp";
+import boks2lille from "../assets/images/boks2lille-69d8be5d0b22c.webp";
+import boks3lille from "../assets/images/boks-3lille-69d8be4b85d89.webp";
+import boks4lille from "../assets/images/boks-4lille-69d8be507f421.webp";
 import ScrollableCaseCards from "../components/ScrollableCaseCards";
 import forsideIkon from "../assets/images/forside ikon.svg";
 
@@ -14,11 +22,19 @@ function ForsideView() {
       { imageSrc: forsideIkon, imageAlt: "Åben bog med lysende pærer", text: "I en verden hvor dataforbruget blot vokser, og stadigt mere af vores hverdag foregår digitalt, er optimering alfa og omega. Hos Resurge har vi skabt et vidensunivers, hvor vi deler indsigter, guides og konkrete værktøjer, der hjælper dig med at optimere din hjemmeside.", reverse: false, readMoreLink: "/blog" },
     ];
 
-    const forsideVaerdiBlocks = [
-        { title: "vores grundsøjler", imageSrc: boks1, imageAlt: "infographic om vores grundsøjler", linkText: "Læs mere", linkTo: "/grundsojler" },
-        { title: "vores grundsøjler", imageSrc: boks2, imageAlt: "infographic om vores grundsøjler", linkText: "Læs mere", linkTo: "/grundsojler" },
-        { title: "vores grundsøjler", imageSrc: boks3, imageAlt: "infographic om vores grundsøjler", linkText: "Læs mere", linkTo: "/grundsojler" },
-        { title: "vores grundsøjler", imageSrc: boks4, imageAlt: "infographic om vores grundsøjler", linkText: "Læs mere", linkTo: "/grundsojler" },
+
+    // Desktop and mobile arrays for VærdierForside
+    const desktopItems = [
+      { imageSrc: boks1, imageAlt: "Optimal performance", linkText: "Optimal performance", linkColor: "black", linkTo: "/om-os#performance-optimering" },
+      { imageSrc: boks2, imageAlt: "Skræddersyede løsninger", linkText: "Skræddersyede løsninger", linkColor: "white", linkTo: "/om-os#skraeddersyede-losninger" },
+      { imageSrc: boks3, imageAlt: "Konkurrence dygtige priser", linkText: "Konkurrence dygtige priser", linkColor: "black", linkTo: "/ydelser#vores-mest-populaere-losninger" },
+      { imageSrc: boks4, imageAlt: "Reduceret CO2-aftryk", linkText: "Reduceret CO2-aftryk", linkColor: "white", linkTo: "/om-os#reduceret-co2-aftryk" },
+    ];
+    const mobileItems = [
+      { imageSrc: boks1lille, imageAlt: "optimal performance link", linkText: "optimal performance", linkColor: "white", linkTo: "/om-os#performance-optimering" },
+      { imageSrc: boks2lille, imageAlt: "Skræddersyede løsninger link", linkText: "Skræddersyede løsninger", linkColor: "black", linkTo: "/om-os#skraeddersyede-losninger" },
+      { imageSrc: boks3lille, imageAlt: "Konkurrence dygtige priser link", linkText: "Konkurrence dygtige priser", linkColor: "white", linkTo: "/ydelser#vores-mest-populaere-losninger" },
+      { imageSrc: boks4lille, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "black", linkTo: "/om-os#reduceret-co2-aftryk" },
     ];
     
     return (
@@ -28,7 +44,7 @@ function ForsideView() {
         </Container>
         <Container>
           <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
-            <Værdier blocks={forsideVaerdiBlocks} />
+            <VærdierForside title="vores grundsøjler" items={desktopItems} mobileItems={mobileItems} />
           </div>
         </Container>
         <div className="overflow-x-hidden">

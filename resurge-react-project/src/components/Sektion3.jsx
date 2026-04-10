@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import smallPlaceholder from "../assets/images/SmallPlaceholder.png";
-import placeholder from "../assets/images/placeholder.png";
 import skraeddersyet from "../assets/images/skrædersyet.svg";
 import optimering from "../assets/images/optimering.svg";
 import co2 from "../assets/images/Co2.svg";
@@ -85,7 +83,7 @@ export default function Sektion3({
                         ) : null}
                     </div>
                     <div className={`content-container flex flex-col flex-1 gap-0 ${block.contentSize || "w-full md:min-w-0"} items-start`}>{/* bruger || for at alve en adskilling, er der ikke nogen størrelser på content array, så  bruger den de values der kommer bagefter */}
-                        <h3 className="font-h3 font-medium w-full max-w-[694px] break-words mb-[20px] md:mb-0">{block.title}</h3>
+                        <h3 id={block.sectionId} className="font-h3 font-medium w-full max-w-[694px] break-words mb-[20px] md:mb-0 scroll-mt-28">{block.title}</h3>
                         <p className="font-body w-full max-w-[694px]">
                             {block.linkText ? (
                                 <>
