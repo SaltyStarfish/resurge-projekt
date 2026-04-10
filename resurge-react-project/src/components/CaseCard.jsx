@@ -11,7 +11,7 @@ export default function CaseCard({ image, tags = [], title, description, link })
         </p>
         )}
 
-      <div className="p-4 flex flex-col items-start text-left">
+      <div className=" flex flex-col items-start text-left">
         <h3 className="font-h3 font-medium mt-[30px]">{title}</h3>
         <p className="font-body mt-[20px]">{description}</p>
 
