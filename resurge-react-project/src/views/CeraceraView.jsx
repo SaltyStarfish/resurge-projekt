@@ -10,7 +10,6 @@ function CeraceraView() {
     type: "tekst-tekst",
     titelVenstre: "Optimeret performance",
     tekstVenstre: "Alle billeder, videoer og animationer blev komprimeret og tilpasset til web, uden at vi gik på kompromis med kvaliteten. Det gjorde, at siden blev markant hurtigere at loade. De lettere filstørrelser har desuden sikret et lavere dataforbrug og dermed et mere energieffektivt site.",
-    titelHøjre: "Let og energieffektiv løsning",
     tekstHøjre: "Unødig kode, plugins og datatungt indhold blev fjernet. Med en simpel teknisk opsætning er det lykkedes os at reducere kompleksiteten, både på kunde- og forretningssiden. Samlet har vores performance-optimeringer reduceret loadtiden og givet højere Google-placeringer på flere af CeraCeras vigtigste søgeord.",
     },
     {
