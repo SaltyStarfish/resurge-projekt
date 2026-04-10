@@ -47,7 +47,7 @@ function CeraceraView() {
 
           <section className="mt-[105px]">
             <h2 className="font-h2 mb-3.75 md:mb-7.5">Webshop- og bookingløsning til aarhusiansk keramikværksted</h2>
-            <p className="font-body mb-4.5 md:mb-9">CeraCera er et keramikværksted i Aarhus, der sælger egne kreationer og afholder keramikkurser. De ønskede en løsning, der i højere grad understøtter deres fysiske butik og gør det nemt for dem at håndtere både online salg og bookinger.</p>
+            <p className="font-body mb-4.5 md:mb-9">CeraCera er et keramikværksted i Aarhus, der sælger egne kreationer og afholder keramikkurser. De ønskede en løsning, der i højere grad understøtter deres fysiske butik og gør det nemt for dem at håndtere både onlinesalg og bookinger.</p>
           </section>
 
         <div className="flex flex-col gap-[80px] mt-[105px]">
