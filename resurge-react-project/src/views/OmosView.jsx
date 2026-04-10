@@ -20,15 +20,15 @@ function OmosView() {
       reverse: false,
       sectionId: "skraeddersyede-losninger" },
     { imageSrc: optimering, imageAlt: "placeholder", title: "Performanceoptimering", 
-      textBefore: "Når det overflødige skæres væk, bliver dit website automatisk lettere og performer bedre. Dertil kommer billed-, video- og typografi-optimering, som igen er med til at gøre dit website hurtigere - uden at gå på kompromis med kvaliteten. Vi holder os opdateret på den nyeste teknologi og de bedste værktøjer til at optimere både performance og energiforbrug. Vil du selv i gang? Læs vores, ", 
-      linkText: "5 konkrete tips til bedre performance, ",
+      textBefore: "Når det overflødige skæres væk, bliver dit website automatisk lettere og performer bedre. Dertil kommer billed-, video- og typografi-optimering, som igen er med til at gøre dit website hurtigere - uden at gå på kompromis med kvaliteten. Vi holder os opdateret på den nyeste teknologi og de bedste værktøjer til at optimere både performance og energiforbrug. Vil du selv i gang? Læs vores ", 
+      linkText: "5 konkrete tips til bedre performance",
       linkTo: "/blog/fem-tips",
-      textAfter: " hvor vi lister tiltag, du straks kan gå i gang med.",
+      textAfter: ", hvor vi lister tiltag, du straks kan gå i gang med.",
       reverse: true,
       // Ankermål til Forside-grid linket "Optimal performance".
       sectionId: "optimal-performance" },
     { imageSrc: co2, imageAlt: "placeholder", title: "Reduceret CO2-aftryk", 
-      textBefore: "Klimabevidsthed fylder i arbejdstilgangen hos Resurge, og performance- og CO2-optimering går heldigvis hånd i hånd. Et website vil per definition aldrig blive bæredygtigt, og man siger, at det eneste bæredygtige website er et website, som ikke eksisterer. Med det i mente tror vi, at det mindst bæredygtige website er et website, som ikke opfylder dets formål. Derfor er det vores topprioritet at skabe effektive webløsninger, som skaber værdi for virksomheder og deres kunder. Samtidig arbejder vi aktivt med at gøre websites mindre datatunge for at opnå en bedre brugeroplevelse, højere performance og et mindre CO2-aftryk. Du finder konkrete råd i vores",
+      textBefore: "Klimabevidsthed fylder i arbejdstilgangen hos Resurge, og performance- og CO2-optimering går heldigvis hånd i hånd. Et website vil per definition aldrig blive bæredygtigt, og man siger, at det eneste bæredygtige website er et website, som ikke eksisterer. Med det i mente tror vi, at det mindst bæredygtige website er et website, som ikke opfylder dets formål. Derfor er det vores topprioritet at skabe effektive webløsninger, som skaber værdi for virksomheder og deres kunder. Samtidig arbejder vi aktivt med at gøre websites mindre datatunge for at opnå en bedre brugeroplevelse, højere performance og et mindre CO2-aftryk. Du finder konkrete råd i vores ",
       linkText: "guides til bedre performance og lavere CO2-aftryk",
       linkTo: "/blog",
       textAfter: ", hvor vi deler praktisk viden og værktøjer.",
@@ -36,13 +36,13 @@ function OmosView() {
       sectionId: "lavere-co2-aftryk" },
     
     { imageSrc: sarah, imageAlt: "UX designer, Sarah", title: "Sarah - UX/UI-designer", 
-      text: "Sarah designer websites, der konverterer besøgende til kunder. Hun målretter designet til netop dine kunder og gør det flot at kigge på og nemt at finde rundt i. Og så tester hun selvfølgelig, at alt virker og fungerer som tiltænkt inden websitet bliver udgivet til rigtige kunder", 
+      text: "Sarah designer websites, der konverterer besøgende til kunder. Hun målretter designet til netop dine kunder og gør det flot at kigge på og nemt at finde rundt i. Og så tester hun selvfølgelig, at alt virker og fungerer som tiltænkt inden websitet bliver udgivet til rigtige kunder.", 
       reverse: true },
     { imageSrc: isabella, imageAlt: "Grafiker, Isabella", title: "Isabella - Grafiker", 
-      text: "Isabella skaber visuelt tiltalende designs, der fanger opmærksomheden og styrker brandets identitet. Hun arbejder tæt sammen med teamet for at sikre, at designet er både æstetisk og funktionelt, og at det understøtter virksomhedens mål og budskaber.", 
+      text: "Visuel identitet, logoer, farver, illustrationer og animationer er Isabella’s spidskompetencer. Om du har et eksisterende brand, eller om vi skal starte from scratch, er opgaven i trygge hænder hos vores grafiker. Bbbb er opdateret på de nyeste teknikker inden for billed- og videooptimering, så dine billeder fremstår i høj kvalitet, men fylder en brøkdel og indlæses hurtigere.", 
       reverse: false },
-    { imageSrc: stine, imageAlt: "Developer, Stine", title: "Stine - Developer", 
-      text: "Stine udvikler robuste og skalerbare løsninger, der sikrer, at dit website fungerer problemfrit. Hun arbejder tæt sammen med designteamet for at implementere funktionalitet, der understøtter virksomhedens mål og brugernes behov.", 
+    { imageSrc: stine, imageAlt: "Webudvikler, Stine", title: "Stine - Webudvikler", 
+      text: "Stine er ekspert i at programmere knivskarpe websites. Hun kan udvikle alt fra simple infosider til omfattende webshops og bookingsystemer. Med Stine ved programmeringsroret bliver ideer og designs til fungerende websites. Performance- og søgemaskineoptimeret, så din virksomhed bliver set, og dine kunder får en lynhurtig og gnidningsfri weboplevelse.", 
       reverse: true },
     
   ];
@@ -51,7 +51,7 @@ function OmosView() {
   const teamSektionBlocks = [blocks[3], blocks[4], blocks[5]];
 
   const vaerdiBlocks = [
-    { title: "vores værdier", imageSrc: info2x2_2, mobileImageSrc: info2x2_1, imageAlt: "", imageSpacing: "pt-[30px] pb-0" },
+    { title: "Hos os får du:", imageSrc: info2x2_2, mobileImageSrc: info2x2_1, imageAlt: "", imageSpacing: "pt-[30px] pb-0" },
   ];
 
   return (
