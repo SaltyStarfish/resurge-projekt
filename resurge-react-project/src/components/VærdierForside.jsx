@@ -1,16 +1,9 @@
-
-
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import boks1 from "../assets/images/boks1-69d89c357f19f-69d8a4f8652db.webp";
 import boks2 from "../assets/images/boks2-69d89c316d34f-69d8a4f81b5b9.webp";
 import boks3 from "../assets/images/boks-3-69d89c3e707f7-69d8a4f81b6bb.webp";
 import boks4 from "../assets/images/boks-4-69d89c38d55fc-69d8a4f85bece.webp";
-import boks1lille from "../assets/images/boks1-lille-69d89c357f19f-69d8a4f8652db.webp";
-import boks2lille from "../assets/images/boks2-lille-69d89c316d34f-69d8a4f81b5b9.webp";
-import boks3lille from "../assets/images/boks3-lille-69d89c3e707f7-69d8a4f81b6bb.webp";
-import boks4lille from "../assets/images/boks4-lille-69d89c38d55fc-69d8a4f85bece.webp";
-
 
 // Default desktop and mobile arrays
 const defaultDesktopItems = [
@@ -20,10 +13,10 @@ const defaultDesktopItems = [
 	{ imageSrc: boks4, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "white", linkTo: "/om-os#reduceret-co2-aftryk" },
 ];
 const defaultMobileItems = [
-	{ imageSrc: boks1lille, imageAlt: "optimal performance link", linkText: "optimal performance", linkColor: "white", linkTo: "/om-os#performance-optimering" },
-	{ imageSrc: boks2lille, imageAlt: "Skræddersyede løsninger link", linkText: "Skræddersyede løsninger", linkColor: "black", linkTo: "/om-os#skraeddersyede-losninger" },
-	{ imageSrc: boks3lille, imageAlt: "Konkurrence dygtige priser link", linkText: "Konkurrence dygtige priser", linkColor: "white", linkTo: "/ydelser#vores-mest-populaere-losninger" },
-	{ imageSrc: boks4lille, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "black", linkTo: "/om-os#reduceret-co2-aftryk" },
+	{ imageSrc: boks11, imageAlt: "optimal performance link", linkText: "optimal performance", linkColor: "white", linkTo: "/om-os#performance-optimering" },
+	{ imageSrc: boks12, imageAlt: "Skræddersyede løsninger link", linkText: "Skræddersyede løsninger", linkColor: "black", linkTo: "/om-os#skraeddersyede-losninger" },
+	{ imageSrc: boks13, imageAlt: "Konkurrence dygtige priser link", linkText: "Konkurrence dygtige priser", linkColor: "white", linkTo: "/ydelser#vores-mest-populaere-losninger" },
+	{ imageSrc: boks14, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "black", linkTo: "/om-os#reduceret-co2-aftryk" },
 ];
 
 export default function VærdierForside({
