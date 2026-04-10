@@ -30,11 +30,11 @@ export default function FiftyFifty({ type, reverse = false, indhold, className =
       {type === "billede-billede" && (
         <>
           <div className="w-full md:w-1/2">
-            <h3 className="font-h3 font-medium">{indhold.billedeVenstre.titelVenstre}</h3>
+            <h3 className="font-h3 font-medium mb-[20px]">{indhold.billedeVenstre.titelVenstre}</h3>
             <img src={indhold.billedeVenstre.src} alt={indhold.billedeVenstre.alt} className="w-full h-auto object-contain" />
           </div>
           <div className="w-full md:w-1/2">
-            <h3 className="font-h3 font-medium">{indhold.billedeHøjre.titelHøjre}</h3>
+            <h3 className="font-h3 font-medium mb-[20px]">{indhold.billedeHøjre.titelHøjre}</h3>
             <img src={indhold.billedeHøjre.src} alt={indhold.billedeHøjre.alt} className="w-full h-auto object-contain" />
           </div>
         </>
