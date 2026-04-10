@@ -10,18 +10,21 @@ function CeraceraView() {
     type: "tekst-tekst",
     titelVenstre: "Optimeret performance",
     tekstVenstre: "Alle billeder, videoer og animationer blev komprimeret og tilpasset til web, uden at vi gik på kompromis med kvaliteten. Det gjorde, at siden blev markant hurtigere at loade. De lettere filstørrelser har desuden sikret et lavere dataforbrug og dermed et mere energieffektivt site.",
+    titelHøjre: "Let og energieffektivt",
     tekstHøjre: "Unødig kode, plugins og datatungt indhold blev fjernet. Med en simpel teknisk opsætning er det lykkedes os at reducere kompleksiteten, både på kunde- og forretningssiden. Samlet har vores performance-optimeringer reduceret loadtiden og givet højere Google-placeringer på flere af CeraCeras vigtigste søgeord.",
     },
     {
     type: "billede-billede",
       billedeVenstre: {
         src: placeHolder,
-        titelVenstre: "Før: CeraCeras tidligere hjemmeside med et rodet og uoverskueligt design",
+        overskrift: "Før:",
+        billedtekst: "CeraCeras tidligere hjemmeside med et rodet og uoverskueligt design",
         alt: "Førbillede af CeraCera.dk - et rodet og uoverskueligt design",
       },
       billedeHøjre: {
         src: ceraCera,
-        titelHøjre: "Efter: CeraCera.dk rebranded med enkelt design og bookingflow",
+        overskrift: "Efter:",
+        billedtekst:"CeraCera.dk efter Resurges rebranding med enkelt design og bookingflow i fokus",
         alt: "Efterbillede af CeraCeras nye hjemmeside, der demonsterer vores klare fokus på et enkelt design og nemt bookingflow",
       },
     },
@@ -52,7 +55,6 @@ function CeraceraView() {
             <FiftyFifty key={i} type={block.type} indhold={block} />
           ))}
         </div>
-        
       </div>
     </Container>
   )
