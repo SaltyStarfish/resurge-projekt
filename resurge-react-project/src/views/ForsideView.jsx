@@ -2,10 +2,10 @@ import Sektion3 from "../components/Sektion3";
 import Container from "../components/Container";
 import ScrollablePriceCards from "../components/ScrollablePriceCards";
 import CtaLink from "../components/CtaLink";
-import Værdier from "../components/Værdier";
-import info4x4 from "../assets/images/info4x4.svg";
+import Værdier from "../components/VærdierForside";
 import ScrollableCaseCards from "../components/ScrollableCaseCards";
 import forsideIkon from "../assets/images/forside ikon.svg";
+
 
 
 
@@ -15,9 +15,10 @@ function ForsideView() {
     ];
 
     const forsideVaerdiBlocks = [
-      {
-        title: "vores grundsøjler", imageSrc: info4x4, imageAlt: "infographic om vores grundsojler", imageSpacing: "pt-[30px] pb-0 md:pt-[80px] md:pb-[60px]"
-      },
+        { title: "vores grundsøjler", imageSrc: boks1, imageAlt: "infographic om vores grundsøjler", linkText: "Læs mere", linkTo: "/grundsojler" },
+        { title: "vores grundsøjler", imageSrc: boks2, imageAlt: "infographic om vores grundsøjler", linkText: "Læs mere", linkTo: "/grundsojler" },
+        { title: "vores grundsøjler", imageSrc: boks3, imageAlt: "infographic om vores grundsøjler", linkText: "Læs mere", linkTo: "/grundsojler" },
+        { title: "vores grundsøjler", imageSrc: boks4, imageAlt: "infographic om vores grundsøjler", linkText: "Læs mere", linkTo: "/grundsojler" },
     ];
     
     return (
