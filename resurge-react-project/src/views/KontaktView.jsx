@@ -108,15 +108,14 @@ function KontaktView() {
         </form>
         </div>
       </div>
-    </Container> 
-
+    </Container>
 
       { /* Popup */ }
       {popupVisible && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/40 pb-20">
           <div className="bg-[#CEBC98] border-2 border-[#722E3C] rounded-xl shadow-lg p-12 relative w-[400px] text-center">
 
-            <p className="font-body font-medium">Tak for din besked! Vi vender tilbage til dig snarest muligt.</p>
+            <p className="font-body font-medium">Tak for din besked! Vi vender tilbage til dig inden for 2 arbejdsdage.</p>
             
             <button onClick={() => setPopupVisible(false)} 
             className="absolute top-3 right-3 w-10 h-10 bg-[#383727]/20 border-2 border-[#722E3C] rounded-full text-[#722E3C] flex items-center justify-center text-3xl">
