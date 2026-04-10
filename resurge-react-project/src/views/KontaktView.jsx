@@ -37,7 +37,7 @@ function KontaktView() {
     <Container>
       <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4 sm:px-6 md:px-0 my-[105px]">
       <h1 className="font-h1 font-medium">Kontakt os</h1>
-          <p className="urbanist text-intro mt-[40px]">
+          <p className="urbanist font-intro mt-[40px]">
             Har du et projekt, en idé eller blot et spørgsmål? Hiv fat i os, og få et uforpligtende tilbud.
           </p>
 
