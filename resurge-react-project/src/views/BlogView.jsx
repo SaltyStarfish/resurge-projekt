@@ -1,6 +1,6 @@
 import FiftyFifty from "../components/FiftyFifty";
 import Container from "../components/Container";
-import speedomenter from "../assets/images/speedometer-website-performance.svg"
+import speedometer from "../assets/images/speedometer.svg"
 import vaegt from "../assets/images/vaegt–hastighed-paa-budget.svg"
 import hurtigtWebsite from "../assets/images/hurtigt-website-lavt-co2.svg"
 
@@ -8,7 +8,7 @@ function BlogView() {
   const blogPosts = [
     {
       type: "billede-tekst",
-      billedeSrc: speedomenter,
+      billedeSrc: speedometer,
       billedeAlt: "Blogindlæg 1",
       titel: "5 tips til at forbedre dit websites performance",
       tekst: "Optimer loadtid, konvertering og brugeroplevelsen med simple greb. Selv små ændringer kan gøre en stor forskel, både for dine brugere og dit klimaaftryk.",
@@ -44,7 +44,7 @@ function BlogView() {
             </p>
 
           {/* Blogoversigt */}
-          <div className="flex flex-col gap-[80px] mt-[105px]">
+          <div className="flex flex-col gap-[80px] mt-[80px]">
             {blogPosts.map((post, i) => (
               <FiftyFifty key={i} type={post.type} indhold={post} reverse={post.reverse} />
           ))}

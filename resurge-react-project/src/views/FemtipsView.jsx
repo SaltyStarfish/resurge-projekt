@@ -30,7 +30,7 @@ function FemtipsView() {
       <Container>
         <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4 sm:px-6 md:px-0 my-[105px]">
           <h1 className="font-h1 font-medium ]">5 performance tips</h1>
-          <p className="urbanist text-[30px] mt-[40px] my-[60px]">Hos Resurge har vi samlet de bedste måder, hvorpå du kan forbedre loadtid, konvertering og brugeroplevelse på dit site. Grebene er simple, og du kan gå i gang med dem allerede i dag.</p>
+          <p className="urbanist font-intro mt-[40px] my-[60px]">Hos Resurge har vi samlet de bedste måder, hvorpå du kan forbedre loadtid, konvertering og brugeroplevelse på dit site. Grebene er simple, og du kan gå i gang med dem allerede i dag.</p>
             <Sektion3 blocks={blocks} />
           </div>
       </Container>
