@@ -1,16 +1,21 @@
-import { NavLink } from "react-router-dom"; // react-router-dom er den extension, som gør at man kan referere mellem siderne
+import { NavLink, useLocation } from "react-router-dom"; // react-router-dom er den extension, som gør at man kan referere mellem siderne
+import { useState, useEffect } from "react";
 import logoimage from '../assets/logo/resurge.svg';
 import headerstyles from './header.module.css';
 
-import { useState } from "react";
 
 export default function Header() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false); //sætter isActive state til false, så den menuen er lukket fra start
 
   const toggleBurgerMenu = () => {
     setIsActive(!isActive);
-  };
+  }; //funktionen, der sætter isActive til true eller false, når den aktiveres af burger-knappen
 
+  const { pathname } = useLocation();
+
+    useEffect(() => {
+    setIsActive(false);
+  }, [pathname]); //sætter isActive til false, når man skifter side, aka "stien" ændrer sig, hvilken lukker burgermenuen
 
   return (
     <header style={{backgroundColor: "#383727"}}>
@@ -28,7 +33,6 @@ export default function Header() {
           </button>
         </div>
         <menu>
-          {/* <li><NavLink className={headerstyles.linktext} to="/">Forside<span class="header-NavLink-hover-effekt"></span></NavLink></li> */}
           <li>
             <NavLink className={({ isActive }) =>  isActive ? `${headerstyles.linktext} ${headerstyles.aktivfane}` : headerstyles.linktext} to="/">Forside<span className={headerstyles.navhovereffekt}></span></NavLink>
           </li>
