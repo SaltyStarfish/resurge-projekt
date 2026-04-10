@@ -95,7 +95,7 @@ function KontaktView() {
           required 
           value={formData.besked}
           onChange={handleChange}
-          placeholder={`Fortæl os gerne, hvilken ydelse du har brug for.\n\nVi glæder os til at høre fra dig`} className="border-2 border-[#722E3C] rounded-md mb-4"
+          placeholder={`Fortæl os gerne, hvilken ydelse du har brug for.\n\nVi glæder os til at høre fra dig`} className="border-2 border-[#722E3C] rounded-md mb-4 p-2"
           rows="5"
           />
           
