@@ -1,6 +1,6 @@
 import FiftyFifty from "../components/FiftyFifty";
 import Container from "../components/Container";
-import placeHolder from "../assets/images/placeholder.png";
+import ceraCeraFoer from "../assets/images/ceracera-foerbillede.webp"
 import ceraCera from "../assets/images/cera-cera-69d63e7cef9d6.webp"
 import Infographic, { CeraCera } from "../components/Infographic";
 
@@ -16,7 +16,7 @@ function CeraceraView() {
     {
     type: "billede-billede",
       billedeVenstre: {
-        src: placeHolder,
+        src: ceraCeraFoer,
         overskrift: "Før:",
         billedtekst: "CeraCeras tidligere hjemmeside med et rodet og uoverskueligt design",
         alt: "Førbillede af CeraCera.dk - et rodet og uoverskueligt design",
