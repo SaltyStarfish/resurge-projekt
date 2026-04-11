@@ -8,8 +8,8 @@ import Container from "../components/Container";
 
 function FemtipsView() {
     const blocks = [
-      { imageSrc: video, imageAlt: "video", title: "Begræns brugen af video og animationer", 
-        text: "Video og animationer er noget af det mest datatunge indhold. Sørg derfor for ikke at sætte dine videoer til autoplay, så de først starter, hvis brugeren ønsker det. Det mindsker både dataforbrug og irritation hos brugerne. Er videoer nødvendige, så hold dem korte eller overvej, om du kan formidle pointerne med små animationer eller andre simple grafiske elementer.", 
+      { imageSrc: video, imageAlt: "video", title: "Begræns brugen af video", 
+        text: "Video er noget af det mest datatunge indhold. Sørg derfor for ikke at sætte dine videoer til autoplay, så de først starter, hvis brugeren ønsker det. Det mindsker både dataforbrug og irritation hos brugerne. Er videoer nødvendige, så hold dem korte eller overvej, om du kan formidle pointerne med små animationer eller andre simple grafiske elementer.", 
         reverse: false },
       { imageSrc: billedeOptimering, imageAlt: "billede optimering", title: "Optimer dine billeder", 
         text: "Billeder kan hurtigt blive en stor strømsluger, især hvis du ikke sørger for at optimere dem. Brug lette formater som AVIF eller WebP til fotos og SVG til logo og illustrationer. Sørg også for at reducere billedstørrelsen, så de ikke er større, end formatet de skal vises i. Du kan fx komprimere dine billeder online med Squoosh eller bruge et WordPress-plugin såsom ShortPixel.\n Derudover anbefaler vi at bruge lazy-loading, så billederne først indlæses, når de skal vises. Et andet tip er at reducere antallet af farver eller gøre billederne en smule mindre skarpe i kanterne. Overvej også, om antallet af billeder på sitet kan reduceres. Ønsker du at erstatte dem med noget, kan du fx bruge simple grafiske elementer i stedet.", 
@@ -29,7 +29,7 @@ function FemtipsView() {
     <>
       <Container>
         <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4 sm:px-6 md:px-0 my-[105px]">
-          <h1 className="font-h1 font-medium ]">5 performance tips</h1>
+          <h1 className="font-h1 font-medium ]">5 tips til at forbedre dit websites performance</h1>
           <p className="urbanist font-intro mt-[40px] my-[60px]">Hos Resurge har vi samlet de bedste måder, hvorpå du kan forbedre loadtid, konvertering og brugeroplevelse på dit site. Grebene er simple, og du kan gå i gang med dem allerede i dag.</p>
             <Sektion3 blocks={blocks} />
           </div>

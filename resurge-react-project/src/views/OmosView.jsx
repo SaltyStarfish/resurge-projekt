@@ -74,7 +74,7 @@ import Infographic from "../components/Infographic";
       <Container>
     
         <section className="mt-15 md:mt-[105px] mb-15 md:mb-[105px]">
-          <h1 className="font-h1 font-medium">Om os</h1>
+          <h1 className="font-h1 font-medium">Hvem er vi?</h1>
               <p className="urbanist font-intro mt-[40px]">
               Hos Resurge er vi passionerede omkring at udvikle hurtige, effektive webløsninger med fokus på performance og et lavere klimaaftryk. 
             </p>
