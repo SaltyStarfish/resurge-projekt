@@ -13,21 +13,6 @@ import Container from "../components/Container"
 import Infographic from "../components/Infographic";
 
 
- export default function OmosView() {
-  const location = useLocation();
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      setTimeout(() => {
-        const el = document.getElementById(id);
-    
-        console.log('Hash:', location.hash, 'ID:', id, 'Element:', el);
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 150);
-    }
-  }, [location]);
 
   const blocks = [
     { imageSrc: skraeddersyet, imageAlt: "placeholder", title: "Skræddersyede løsninger", 
@@ -61,9 +46,24 @@ import Infographic from "../components/Infographic";
       reverse: true },
     
   ];
+  export default function OmosView() {
+    const location = useLocation();
+    useEffect(() => {
+      if (location.hash) {
+        const id = location.hash.replace('#', '');
+        setTimeout(() => {
+          const el = document.getElementById(id);
+      
+          console.log('Hash:', location.hash, 'ID:', id, 'Element:', el);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 150);
+      }
+    }, [location]);
 
   const firstSektionBlocks = blocks.slice(0, 3);
-  const teamSektionBlocks = [blocks[3], blocks[4], blocks[5]];
+  const teamSektionBlocks = blocks.slice(3, 6);
 
   const vaerdiBlocks = [
     { title: "Hos os får du:", imageSrc: info2x2_2, mobileImageSrc: info2x2_1, imageAlt: "", imageSpacing: "pt-[30px] pb-0" },
@@ -72,14 +72,12 @@ import Infographic from "../components/Infographic";
   return (
     <>
       <Container>
-    
         <section className="mt-15 md:mt-[105px] mb-15 md:mb-[105px]">
+          <h1 className="font-h1 font-medium">Om os</h1>
           <h1 className="font-h1 font-medium">Hvem er vi?</h1>
-              <p className="urbanist font-intro mt-[40px]">
-              Hos Resurge er vi passionerede omkring at udvikle hurtige, effektive webløsninger med fokus på performance og et lavere klimaaftryk. 
+              <p className="urbanist font-intro mt-[40px]"> Hos Resurge er vi passionerede omkring at udvikle hurtige, effektive webløsninger med fokus på performance og et lavere klimaaftryk. 
             </p>
         </section>
-
       </Container>
       <Container>
         <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
