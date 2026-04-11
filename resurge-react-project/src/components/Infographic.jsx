@@ -48,18 +48,21 @@ export default function Infographic({ blocks }) {
       <h2 className="font-h2 mb-7.5 w-full max-w-[694px] mb-8 text-left">CeraCera værdier</h2>
       {!isMobile ? (
         <div className="flex flex-row md:gap-[34px] justify-center w-full">
-          {shownBlocks.map((block, idx) => (
-            <div key={idx} className="relative group flex flex-col justify-between items-start mx-auto max-w-[265px] w-full h-[200px]">
-              <img src={block.deskImgSrc} alt={block.imageAlt} className="w-full max-w-[265px] h-[200px] object-cover rounded-[50px] absolute top-0 left-0 z-0" draggable="false" />
-              <div className={`relative z-10 w-full h-full flex flex-col justify-between px-4 py-6 ${block.textColor === "white" ? "text-white" : "text-black"}`}>
-                <h1 className="font-h1 font-medium w-[140px] text-left self-start" style={{ width: '140px', textAlign: 'left' }}>{block.title}</h1>
-                <div className="flex flex-col items-start w-full">
-                  <div className="text-base font-medium mt-2 text-left w-full">{block.overskrift}</div>
-                  <p className="text-sm font-medium mt-1 text-left w-full" style={{ maxWidth: '230px' }}>{block.text}</p>
+          {shownBlocks.map((block, idx) => {
+            const isVaerdierBlock = shownBlocks === VærdierBlocks;
+            return (
+              <div key={idx} className="relative group flex flex-col justify-between items-start mx-auto max-w-[265px] w-full h-[200px]">
+                <img src={block.deskImgSrc} alt={block.imageAlt} className="w-full max-w-[265px] h-[200px] object-cover rounded-[50px] absolute top-0 left-0 z-0" draggable="false" />
+                <div className={`relative z-10 w-full h-full flex flex-col ${isVaerdierBlock ? 'justify-start' : 'justify-between'} px-4 py-6 ${block.textColor === "white" ? "text-white" : "text-black"}`}>
+                  <h1 className="font-h1 font-medium w-[140px] text-left self-start" style={{ width: '140px', textAlign: 'left' }}>{block.title}</h1>
+                  <div className="flex flex-col items-start w-full">
+                    <div className="font-medium mt-2 text-left w-full" style={isVaerdierBlock ? { fontSize: '20px' } : {}}>{block.overskrift}</div>
+                    <p className="font-medium mt-1 text-left w-full" style={isVaerdierBlock ? { fontSize: '16px', maxWidth: '230px' } : { maxWidth: '230px' }}>{block.text}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       ) : (
         <div className="flex flex-row gap-[10px] justify-center w-full">
