@@ -100,7 +100,7 @@ export default function Sektion3({
                         </p>
                         {block.readMoreLink && (
                             <Link to={block.readMoreLink} onClick={() => window.scrollTo(0, 0)} className={readMoreLinkClasses}>
-                                læs mere her →
+                                Læs mere her →
                             </Link>
                         )}
                     </div>

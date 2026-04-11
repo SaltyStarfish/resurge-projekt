@@ -14,14 +14,14 @@ import lilleboks4 from "../assets/images/lilleboks4.webp";
 const desktopItems = [
    { imageSrc: boks1, imageAlt: "Optimal performance link", linkText: "Optimal performance", linkColor: "black", linkTo: "/om-os#optimal-performance" },
    { imageSrc: boks2, imageAlt: "Skræddersyede løsninger link", linkText: "Skræddersyede løsninger", linkColor: "white", linkTo: "/om-os#skraeddersyede-losninger" },
-   { imageSrc: boks3, imageAlt: "Konkurrence dygtige priser link", linkText: "Konkurrence dygtige priser", linkColor: "black", linkTo: "/ydelser#vores-mest-populaere-losninger" },
+   { imageSrc: boks3, imageAlt: "Konkurrencedygtige priser link", linkText: "Konkurrencedygtige priser", linkColor: "black", linkTo: "/ydelser#vores-mest-populaere-losninger" },
    { imageSrc: boks4, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "white", linkTo: "/om-os#lavere-co2-aftryk" },
 ];
 const mobileItems = [
-   { imageSrc: lilleboks1, imageAlt: "optimal performance link", linkText: "optimal performance", linkColor: "white", linkTo: "/om-os#optimal-performance" },
-   { imageSrc: lilleboks2, imageAlt: "Skræddersyede løsninger link", linkText: "Skræddersyede løsninger", linkColor: "black", linkTo: "/om-os#skraeddersyede-losninger" },
-   { imageSrc: lilleboks3, imageAlt: "Konkurrence dygtige priser link", linkText: "Konkurrence dygtige priser", linkColor: "white", linkTo: "/ydelser#vores-mest-populaere-losninger" },
-   { imageSrc: lilleboks4, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "black", linkTo: "/om-os#lavere-co2-aftryk" },
+   { imageSrc: lilleboks1, imageAlt: "Optimal performance link", linkText: "Optimal performance", linkColor: "black", linkTo: "/om-os#optimal-performance" },
+   { imageSrc: lilleboks2, imageAlt: "Skræddersyede løsninger link", linkText: "Skræddersyede løsninger", linkColor: "white", linkTo: "/om-os#skraeddersyede-losninger" },
+   { imageSrc: lilleboks3, imageAlt: "Konkurrencedygtige priser link", linkText: "Konkurrencedygtige priser", linkColor: "black", linkTo: "/ydelser#vores-mest-populaere-losninger" },
+   { imageSrc: lilleboks4, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "white", linkTo: "/om-os#lavere-co2-aftryk" },
 ];
 
 export default function VærdiKknapper() {
@@ -39,7 +39,7 @@ export default function VærdiKknapper() {
 
 	return (
 		<div className="content-container w-full max-w-[1102px] mx-auto pb-[60px]">
-			<h2 className="font-h2 mb-7.5w-full max-w-[694px] mb-8 text-left">Hos os for du...</h2>
+			<h2 className="font-h2 w-full max-w-[694px] mb-8 text-left">Hos os får du:</h2>
 			{!isMobile ? (
 				<div className="flex flex-row w-full gap-[34px]">
 					{shownItems.map((item, idx) => (

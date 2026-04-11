@@ -17,7 +17,7 @@ import VærdiKknapper from "../components/VærdiKknapper";
 
 function ForsideView() {
     const blocks = [
-      { imageSrc: forsideIkon, imageAlt: "Åben bog med lysende pærer", text: "I en verden hvor dataforbruget blot vokser, og stadigt mere af vores hverdag foregår digitalt, er optimering alfa og omega. Hos Resurge har vi skabt et vidensunivers, hvor vi deler indsigter, guides og konkrete værktøjer, der hjælper dig med at optimere din hjemmeside.", reverse: false, readMoreLink: "/blog" },
+      { imageSrc: forsideIkon, imageAlt: "Åben bog med lysende pære", text: "I en verden hvor dataforbruget blot vokser, og stadigt mere af vores hverdag foregår digitalt, er optimering alfa og omega. Hos Resurge har vi skabt et vidensunivers, hvor vi deler indsigter, guides og konkrete værktøjer, der hjælper dig med at optimere din hjemmeside.", reverse: false, readMoreLink: "/blog" },
     ];
 
 

@@ -33,7 +33,7 @@ function ScrollableCaseCards() {
     {
       title: "Økofamilien",
       image: oekofamilien,
-      tags: ["Webshop", "UX", "Performance-optimering", "Shopify", "Kodeoptimering", "SEO", "B2C", "Redduceret CO2-aftryk"],
+      tags: ["Webshop", "UX", "Performance-optimering", "Shopify", "Kodeoptimering", "SEO", "B2C", "Reduceret CO2-aftryk"],
       link: "#"
     },
   ]

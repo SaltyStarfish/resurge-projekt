@@ -17,17 +17,17 @@ import resboks3 from "../assets/images/resboks3.webp";
 import resboks4 from "../assets/images/resboks4.webp";
 
 const VærdierBlocks = [
-  { deskImgSrc: vaerdiboks1, mbImgSrc: lillevaerdiboks1, imageAlt: "visualisering af hvad vi tilbyder og hvores værdier", overskrift: "Optimal performance", text: "hurtige og effektive løsninger, med fokus på kvalitet",textColor: "white" },
-  { deskImgSrc: vaerdiboks2, mbImgSrc: lillevaerdiboks2, imageAlt: "visualisering af hvad vi tilbyder og hvores værdier", overskrift: "Skræddersyede løsninger", text: "bygger løsninger tilpasset hver kunde som giver jer kontrollen", textColor: "black" },
-  { deskImgSrc: vaerdiboks3, mbImgSrc: lillevaerdiboks3, imageAlt: "visualisering af hvad vi tilbyder og hvores værdier", overskrift: "Konkurrencedygtige priser", text: "levere en stabilt produkt til en fair pris", textColor: "white" },
-  { deskImgSrc: vaerdiboks4, mbImgSrc: lillevaerdiboks4, imageAlt: "visualisering af hvad vi tilbyder og hvores værdier", overskrift: "Reduceret C02 - aftryk", text: "skabe webløsninger med et lavere energi forbrug ", textColor: "black" }
+  { deskImgSrc: vaerdiboks1, mbImgSrc: lillevaerdiboks1, imageAlt: "visualisering af hvad vi tilbyder og hvores værdier", overskrift: "Optimal performance", text: "Hurtige og effektive løsninger i høj kvalitet",textColor: "white" },
+  { deskImgSrc: vaerdiboks2, mbImgSrc: lillevaerdiboks2, imageAlt: "visualisering af hvad vi tilbyder og hvores værdier", overskrift: "Skræddersyede tilbud", text: "Løsninger tilpasset jeres behov med fuld kontrol", textColor: "black" },
+  { deskImgSrc: vaerdiboks3, mbImgSrc: lillevaerdiboks3, imageAlt: "visualisering af hvad vi tilbyder og hvores værdier", overskrift: "Konkurrencedygtige priser", text: "Stabile løsninger til en fair og gennemsigtig pris", textColor: "white" },
+  { deskImgSrc: vaerdiboks4, mbImgSrc: lillevaerdiboks4, imageAlt: "visualisering af hvad vi tilbyder og hvores værdier", overskrift: "Reduceret CO2-aftryk", text: "Løsninger med fokus på lavere energiforbrug", textColor: "black" }
 ];
 
 export const CeraCera = [
-  { deskImgSrc: resboks1, mbImgSrc: lilleresboks1, imageAlt: "infographic, der visualisere 60% hurtigere load tid", title: "60%", overskrift: "hurtigere", text: "loadtid.", textColor: "white" },
-  { deskImgSrc: resboks2, mbImgSrc: lilleresboks2, imageAlt: "infographic, der visualisere 20% højere konverteringsrate", title: "20%", overskrift: "Højere", text: "konverteringsrate", textColor: "black" },
-  { deskImgSrc: resboks3, mbImgSrc: lilleresboks3, imageAlt: "Lille resboks 3 alt text", title: "50%", overskrift: "Lavere", text: "samlet CO2-udledning", textColor: "white" },
-  { deskImgSrc: resboks4, mbImgSrc: lilleresboks4, imageAlt: "Lille resboks 4 alt text", title: "30%", overskrift: "Øget", text: "organisk trafik", textColor: "black" }
+  { deskImgSrc: resboks1, mbImgSrc: lilleresboks1, imageAlt: "infographic, der visualisere 60% hurtigere load tid", title: "60%", overskrift: "HURTIGERE", text: "loadtid", textColor: "white" },
+  { deskImgSrc: resboks2, mbImgSrc: lilleresboks2, imageAlt: "infographic, der visualisere 20% højere konverteringsrate", title: "20%", overskrift: "HØJERE", text: "konverteringsrate", textColor: "black" },
+  { deskImgSrc: resboks3, mbImgSrc: lilleresboks3, imageAlt: "Lille resboks 3 alt text", title: "50%", overskrift: "LAVERE", text: "samlet CO2-udledning", textColor: "white" },
+  { deskImgSrc: resboks4, mbImgSrc: lilleresboks4, imageAlt: "Lille resboks 4 alt text", title: "30%", overskrift: "ØGET", text: "organisk trafik", textColor: "black" }
 ];
 
 export default function Infographic({ blocks, title = "Hos os får du:" }) {

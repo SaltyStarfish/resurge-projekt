@@ -35,7 +35,7 @@ export default function CasesView() {
       title: "Økofamilien",
       description: "Webshop-løsning i tråd med Økofamiliens bæredygtige udvalg. Siden er bygget og optimeret med ønsket om et lavere ressourceforbrug.",
       image: oekofamilien,
-      tags: ["Webshop", "UX", "Performance-optimering", "Shopify", "Kodeoptimering", "SEO", "B2C", "Redduceret CO2-aftryk"],
+      tags: ["Webshop", "UX", "Performance-optimering", "Shopify", "Kodeoptimering", "SEO", "B2C", "Reduceret CO2-aftryk"],
       link: "#"
     },
   ];
