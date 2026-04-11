@@ -24,7 +24,7 @@ const mobileItems = [
 	{ imageSrc: lilleboks4, imageAlt: "Reduceret CO2-aftryk link", linkText: "Reduceret CO2-aftryk", linkColor: "black", linkTo: "/om-os#reduceret-co2-aftryk" },
 ];
 
-export default function VærdierForside() {
+export default function VærdiKknapper() {
  
 	const [isMobile, setIsMobile] = useState(false);
 	useEffect(() => {
@@ -38,7 +38,7 @@ export default function VærdierForside() {
 	const shownItems = isMobile ? mobileItems : desktopItems;
 
 	return (
-		<div className="content-container w-full max-w-[1102px] mx-auto">
+		<div className="content-container w-full max-w-[1102px] mx-auto pb-[60px]">
 			<h2 className="font-h2 font-medium w-full max-w-[694px] mb-8 text-left">Hos os for du...</h2>
 			{!isMobile ? (
 				<div className="flex flex-row w-full gap-[34px]">

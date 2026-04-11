@@ -12,7 +12,7 @@ import lilleboks1 from "../assets/images/lilleboks1.webp";
 import lilleboks2 from "../assets/images/lilleboks2.webp";
 import lilleboks3 from "../assets/images/lilleboks3.webp";
 import lilleboks4 from "../assets/images/lilleboks4.webp";
-import VærdierForside from "../components/VærdierForside";
+import VærdiKknapper from "../components/VærdiKknapper";
 
 
 function ForsideView() {
@@ -22,7 +22,7 @@ function ForsideView() {
 
 
 
-    // Sektion3-style block array for VærdierForside
+    // Sektion3-style block array for VærdiKknapper
     const vaerdierBlocks = [
       { imageSrc: boks1, imageAlt: "Optimal performance link", linkText: "Optimal performance", linkColor: "black", linkTo: "/om-os#performance-optimering" },
       { imageSrc: boks2, imageAlt: "Skræddersyede løsninger link", linkText: "Skræddersyede løsninger", linkColor: "white", linkTo: "/om-os#skraeddersyede-losninger" },
@@ -44,7 +44,7 @@ function ForsideView() {
 
         <Container>
           <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
-            <VærdierForside blocks={vaerdierBlocks} />
+            <VærdiKknapper blocks={vaerdierBlocks} />
           </div>
         </Container>
         <div className="overflow-x-hidden">

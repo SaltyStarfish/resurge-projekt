@@ -1,5 +1,5 @@
-// Husk at importere alle Links og Components, der referes til
-import Værdier from "../components/Værdier"
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Sektion3 from "../components/Sektion3"
 import skraeddersyet from "../assets/images/skrædersyet.svg"
 import optimering from "../assets/images/optimering.svg"
@@ -10,10 +10,27 @@ import stine from "../assets/images/stine-69d574236ff46.webp";
 import sarah from "../assets/images/sarah-69d5742328640.webp";
 import isabella from "../assets/images/isabella-69d5742319ce2.webp";
 import Container from "../components/Container"
+import VærdiKknapper from "../components/VærdiKknapper"
+
+import VærdierForside from "../components/VærdiKknapper"
 
 
-function OmosView() {
-  // All three blocks for OmosView
+ export default function OmosView() {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      setTimeout(() => {
+        const el = document.getElementById(id);
+    
+        console.log('Hash:', location.hash, 'ID:', id, 'Element:', el);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 150);
+    }
+  }, [location]);
+
   const blocks = [
     { imageSrc: skraeddersyet, imageAlt: "placeholder", title: "Skræddersyede løsninger", 
       text: "Alt for mange bureauer arbejder med tunge løsninger, som ikke er tilpasset den enkelte virksomhed. Som indsamler data, der aldrig bliver brugt, men kun fylder og bruger strøm. Eller udliciterer webproduktionen til andre lande, hvor du mister kontrollen og overblikket. Den tendens vil vi gøre op med\n Hos Resurge mener vi, at tingene skal gøres ordentligt, og til en overkommelig pris. Så du har kontrollen hele vejen igennem og får en webløsning, der er tilpasset dine behov, ikke bare en standardpakke. Websitet skal passe til din virksomhed her og nu og kan udvides, når din virksomhed vokser.",
@@ -25,7 +42,7 @@ function OmosView() {
       linkTo: "/blog/fem-tips",
       textAfter: ", hvor vi lister tiltag, du straks kan gå i gang med.",
       reverse: true,
-      // Ankermål til Forside-grid linket "Optimal performance".
+
       sectionId: "optimal-performance" },
     { imageSrc: co2, imageAlt: "placeholder", title: "Reduceret CO2-aftryk", 
       textBefore: "Klimabevidsthed fylder i arbejdstilgangen hos Resurge, og performance- og CO2-optimering går heldigvis hånd i hånd. Et website vil per definition aldrig blive bæredygtigt, og man siger, at det eneste bæredygtige website er et website, som ikke eksisterer. Med det i mente tror vi, at det mindst bæredygtige website er et website, som ikke opfylder dets formål. Derfor er det vores topprioritet at skabe effektive webløsninger, som skaber værdi for virksomheder og deres kunder. Samtidig arbejder vi aktivt med at gøre websites mindre datatunge for at opnå en bedre brugeroplevelse, højere performance og et mindre CO2-aftryk. Du finder konkrete råd i vores ",
@@ -60,12 +77,12 @@ function OmosView() {
         <div className="flex flex-col w-full max-w-[1102px] mx-auto px-4 sm:px-6 md:px-0 my-[105px]">
           <h1 className="font-h1 font-medium">Om os</h1>
           <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
-            <Værdier blocks={vaerdiBlocks} />
+            <VærdiKknapper/>
           </div>
           <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]" >
             <Sektion3 blocks={firstSektionBlocks} />
           </div>
-          <div lassName="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
+          <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
             <h2 className="font-h2 font-medium mb-0">Mød vores seje hold</h2>
             <Sektion3 blocks={teamSektionBlocks} />        
           </div>
@@ -75,5 +92,3 @@ function OmosView() {
     </>  
   )
 }
-
-export default OmosView
