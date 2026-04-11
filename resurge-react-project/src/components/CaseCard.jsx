@@ -3,7 +3,7 @@ import CtaLink from "./CtaLink";
 export default function CaseCard({ image, tags = [], title, description, link }) {
   return (
     <div className="flex flex-col">
-      <img src={image} alt={title} loading="lazy" className="w-full w-[495px] h-[374px] rounded-[20px] object-cover object-center mx-auto" />
+      <img src={image} alt={title} loading="lazy" className="w-full max-w-[495px] aspect-[4/3] rounded-[20px] object-cover object-center mx-auto" />
       
       {tags.length > 0 && (
         <p className="font-tag font-medium mt-[20px]">
