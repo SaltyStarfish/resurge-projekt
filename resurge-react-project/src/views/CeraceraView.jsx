@@ -44,8 +44,8 @@ function CeraceraView() {
             <p className="urbanist font-intro mt-[40px] mb-[105px]">
               CeraCera er et keramikværksted i Aarhus, der sælger egne kreationer og afholder keramikkurser. De ønskede en løsning, der i højere grad understøtter deres fysiske butik og gør det nemt for dem at håndtere både onlinesalg og bookinger.
             </p>
-            
-          <Infographic blocks={CeraCera} />
+
+          <Infographic blocks={CeraCera} title="Resultater:" />
         <div className="flex flex-col gap-[80px] mt-[105px]">
           {indhold.map((block, i) => (
             <FiftyFifty key={i} type={block.type} indhold={block} />

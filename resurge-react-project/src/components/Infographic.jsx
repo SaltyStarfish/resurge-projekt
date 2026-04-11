@@ -30,7 +30,7 @@ export const CeraCera = [
   { deskImgSrc: resboks4, mbImgSrc: lilleresboks4, imageAlt: "Lille resboks 4 alt text", title: "30%", overskrift: "Øget", text: "organisk trafik", textColor: "black" }
 ];
 
-export default function Infographic({ blocks }) {
+export default function Infographic({ blocks, title = "Hos os får du:" }) {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const mobileQuery = window.matchMedia("(max-width: 768px)");
@@ -45,7 +45,7 @@ export default function Infographic({ blocks }) {
   //opdelt i mobil show og desk, fx deskImg eller mbImg//
   return (
     <div className="content-container w-full ">
-      <h2 className="font-h2 mb-7.5 w-full max-w-[694px] mb-8 text-left">CeraCera værdier</h2>
+      <h2 className="font-h2 mb-7.5 w-full max-w-[694px] mb-8 text-left">{title}</h2>
       {!isMobile ? (
         <div className="flex flex-row md:gap-[34px] justify-center w-full">
           {shownBlocks.map((block, idx) => {
