@@ -77,9 +77,9 @@ export default function Sektion3({
             {blocks.map((block, index) => (
                 <div
                     key={index}
-                    className={`child-container w-full flex items-start gap-y-[30px] md:gap-y-0 md:gap-x-[110px] flex-col ${block.reverse ? "md:flex-row-reverse" : "md:flex-row"}`}
+                    className={`child-container w-full flex items-center gap-y-[30px] md:gap-y-0 md:gap-x-[110px] flex-col ${block.reverse ? "md:flex-row-reverse" : "md:flex-row"}`}
                 >
-                    <div className={`image-container ${block.imageSize || "w-[300px] h-[300px] max-w-full"} flex items-center justify-center shrink-0 self-center md:items-start md:justify-start md:self-start rounded-[25px] overflow-hidden`}>
+                    <div className={`image-container ${block.imageSize || "w-[300px] h-auto object-contain"} flex items-center justify-center shrink-0 self-center rounded-[25px] overflow-hidden`}>
                         {block.animation ? (<AnimationBatteri/>) : null}
                         {block.imageSrc ? (
                             <img src={block.imageSrc} alt={block.imageAlt || ""} loading="lazy" className={`w-full h-full ${block.imageSrc === sarah || block.imageSrc === isabella || block.imageSrc === stine ? "object-cover" : "object-contain"} object-top rounded-[25px]`} />
