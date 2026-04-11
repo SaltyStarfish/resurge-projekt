@@ -6,7 +6,7 @@ export default function FiftyFifty({ type, reverse = false, indhold, className =
       {type === "billede-tekst" && (
         <>
           <div className="w-full md:w-1/2 h-full">
-            <img src={indhold.billedeSrc} alt={indhold.billedeAlt} className="w-full h-full object-contain" />
+            <img src={indhold.billedeSrc} alt={indhold.billedeAlt} loading="lazy" className="w-full h-auto object-contain" />
           </div>
           <div className="w-full md:w-1/2 flex flex-col justify-center gap-4">
             <h3 className="font-h3 font-medium">{indhold.titel}</h3>
