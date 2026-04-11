@@ -86,7 +86,7 @@ export default function Sektion3({
                         ) : null}
                     </div>
                     <div className={`content-container flex flex-col flex-1 gap-0 ${block.contentSize || "w-full md:min-w-0"} items-start`}>{/* bruger || for at alve en adskilling, er der ikke nogen størrelser på content array, så  bruger den de values der kommer bagefter */}
-                        <h3 id={block.sectionId} className="font-h3 font-medium w-full max-w-[694px] break-words mb-[20px] scroll-mt-28">{block.title}</h3>
+                        <h2 id={block.sectionId} className="font-h2 mb-7.5 scroll-mt-32">{block.title}</h2>
                         <p className="font-body w-full max-w-[694px]">
                             {block.linkText ? (
                                 <>
