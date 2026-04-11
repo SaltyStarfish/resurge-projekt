@@ -31,13 +31,13 @@ export default function FiftyFifty({ type, reverse = false, indhold, className =
         <>
           <div className="w-full md:w-1/2">
             <h3 className="font-h3 font-medium mb-[20px]">{indhold.billedeVenstre.overskrift}</h3>
-            <img src={indhold.billedeVenstre.src} alt={indhold.billedeVenstre.alt} className="w-full h-auto object-contain" />
+            <img src={indhold.billedeVenstre.src} alt={indhold.billedeVenstre.alt} className="w-[495px] h-[374px] rounded-[20px] object-cover object-center" />
 
             <p className="font-body mt-4 opacity-80">{indhold.billedeVenstre.billedtekst}</p>
           </div>
           <div className="w-full md:w-1/2">
             <h3 className="font-h3 font-medium mb-[20px]">{indhold.billedeHøjre.overskrift}</h3>
-            <img src={indhold.billedeHøjre.src} alt={indhold.billedeHøjre.alt} className="w-full h-auto object-contain" />
+            <img src={indhold.billedeHøjre.src} alt={indhold.billedeHøjre.alt} className="w-[495px] h-[374px] rounded-[20px] object-cover object-center" />
             <p className="font-body mt-4 opacity-80">{indhold.billedeHøjre.billedtekst}</p>
           </div>
         </>
