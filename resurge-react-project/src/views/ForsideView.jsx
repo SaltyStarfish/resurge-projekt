@@ -13,7 +13,7 @@ import lilleboks2 from "../assets/images/lilleboks2.webp";
 import lilleboks3 from "../assets/images/lilleboks3.webp";
 import lilleboks4 from "../assets/images/lilleboks4.webp";
 import VærdiKknapper from "../components/VærdiKknapper";
-
+import heroImage from "../assets/images/heroRethinkRefineResurge.svg";
 
 function ForsideView() {
     const blocks = [
@@ -38,8 +38,9 @@ function ForsideView() {
 
     return (
       <>
+        <img src={heroImage} alt="Rethink. Refine. Resurge." />
         <Container>
-          <h1 className="font-h1 font-medium my-[105px]">Resurge</h1>
+          {/* <h1 className="font-h1 font-medium my-[105px]">Resurge</h1> */}
         </Container>
 
         <Container>
