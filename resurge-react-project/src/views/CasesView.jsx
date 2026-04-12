@@ -1,9 +1,9 @@
 import CaseCard from "../components/CaseCard"
 import Container from "../components/Container"
 import ceraCera from "../assets/images/cera-cera-69d63e7cef9d6.webp"
-import kreuzbar from "../assets/images/kreubar-69d63e88a6a8c.webp"
-import oekofamilien from "../assets/images/oekofamilien-case.webp"
-import repare from "../assets/images/repare-case.webp"
+import kreuzbar from "../assets/images/kreubar-69d63e88a6a8c-mindre.webp"
+import oekofamilien from "../assets/images/oekofamilien-case-mindre.webp"
+import repare from "../assets/images/repare-case-mindre.webp"
 
 export default function CasesView() {
   const cases = [
