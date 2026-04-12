@@ -16,7 +16,7 @@ import Infographic from "../components/Infographic";
 
   const blocks = [
     { imageSrc: skraeddersyet, imageAlt: "placeholder", title: "Skræddersyede løsninger", 
-      text: "Alt for mange bureauer arbejder med tunge løsninger, som ikke er tilpasset den enkelte virksomhed. Som indsamler data, der aldrig bliver brugt, men kun fylder og bruger strøm. Eller udliciterer webproduktionen til andre lande, hvor du mister kontrollen og overblikket. Den tendens vil vi gøre op med\n Hos Resurge mener vi, at tingene skal gøres ordentligt, og til en overkommelig pris. Så du har kontrollen hele vejen igennem og får en webløsning, der er tilpasset dine behov, ikke bare en standardpakke. Websitet skal passe til din virksomhed her og nu og kan udvides, når din virksomhed vokser.",
+      text: "Alt for mange bureauer arbejder med tunge løsninger, som ikke er tilpasset den enkelte virksomhed. Som indsamler data, der aldrig bliver brugt, men kun fylder og bruger strøm. Eller udliciterer webproduktionen til andre lande, hvor du mister kontrollen og overblikket. Den tendens vil vi gøre op med.\n Hos Resurge mener vi, at tingene skal gøres ordentligt, og til en overkommelig pris. Så du har kontrollen hele vejen igennem og får en webløsning, der er tilpasset dine behov, ikke bare en standardpakke. Websitet skal passe til din virksomhed her og nu og kan udvides, når din virksomhed vokser.",
       reverse: false,
       sectionId: "skraeddersyede-losninger" },
     { imageSrc: optimering, imageAlt: "placeholder", title: "Performanceoptimering", 
@@ -39,7 +39,7 @@ import Infographic from "../components/Infographic";
       text: "Sarah designer websites, der konverterer besøgende til kunder. Hun målretter designet til netop dine kunder og gør det flot at kigge på og nemt at finde rundt i. Og så tester hun selvfølgelig, at alt virker og fungerer som tiltænkt inden websitet bliver udgivet til rigtige kunder.", 
       reverse: true },
     { imageSrc: isabella, imageAlt: "Grafiker, Isabella", title: "Isabella - Grafiker", 
-      text: "Visuel identitet, logoer, farver, illustrationer og animationer er Isabella’s spidskompetencer. Om du har et eksisterende brand, eller om vi skal starte from scratch, er opgaven i trygge hænder hos vores grafiker. Bbbb er opdateret på de nyeste teknikker inden for billed- og videooptimering, så dine billeder fremstår i høj kvalitet, men fylder en brøkdel og indlæses hurtigere.", 
+      text: "Visuel identitet, logoer, farver, illustrationer og animationer er Isabella’s spidskompetencer. Om du har et eksisterende brand, eller om vi skal starte from scratch, er opgaven i trygge hænder hos vores grafiker. Isabella er opdateret på de nyeste teknikker inden for billed- og videooptimering, så dine billeder fremstår i høj kvalitet, men fylder en brøkdel og indlæses hurtigere.", 
       reverse: false },
     { imageSrc: stine, imageAlt: "Webudvikler, Stine", title: "Stine - Webudvikler", 
       text: "Stine er ekspert i at programmere knivskarpe websites. Hun kan udvikle alt fra simple infosider til omfattende webshops og bookingsystemer. Med Stine ved programmeringsroret bliver ideer og designs til fungerende websites. Performance- og søgemaskineoptimeret, så din virksomhed bliver set, og dine kunder får en lynhurtig og gnidningsfri weboplevelse.", 
