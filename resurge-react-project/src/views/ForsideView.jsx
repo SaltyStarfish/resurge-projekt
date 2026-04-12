@@ -40,7 +40,7 @@ function ForsideView() {
       <>
         <div className="hero reletive flex justify-center items-center">
           <h1 className="absolute inset-auto text-center text-[8vw] uppercase font-light">Rethink. Refine.<br />Resurge.</h1>
-          <img src={heroImage} alt="Rethink. Refine. Resurge."/>
+          <img src={heroImage} width={1024} height={438.4} alt="Rethink. Refine. Resurge." className="w-full"/>
         </div>
 
         <Container>
