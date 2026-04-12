@@ -16,22 +16,21 @@ import Infographic from "../components/Infographic";
 
   const blocks = [
     { imageSrc: skraeddersyet, imageAlt: "placeholder", title: "Skræddersyede løsninger", 
-      text: "Alt for mange bureauer arbejder med tunge løsninger, som ikke er tilpasset den enkelte virksomhed. Som indsamler data, der aldrig bliver brugt, men kun fylder og bruger strøm. Eller udliciterer webproduktionen til andre lande, hvor du mister kontrollen og overblikket. Den tendens vil vi gøre op med.\n Hos Resurge mener vi, at tingene skal gøres ordentligt, og til en overkommelig pris. Så du har kontrollen hele vejen igennem og får en webløsning, der er tilpasset dine behov, ikke bare en standardpakke. Websitet skal passe til din virksomhed her og nu og kan udvides, når din virksomhed vokser.",
+      text: "Hos Resurge arbejder vi ikke med standardløsninger, men tager højde for behovene i netop din virksomhed. Alt for mange bureauer arbejder med tunge løsninger, som ikke er tilpasset den enkelte virksomhed. Som indsamler data, der aldrig bliver brugt, men kun fylder og bruger strøm. Eller udliciterer webproduktionen til andre lande, hvor du mister kontrollen og overblikket. Den tendens vil vi gøre op med. Vi mener, at tingene skal gøres ordentligt - og til en overkommelig pris. Så du har kontrollen hele vejen igennem og får en webløsning, der er tilpasset dine behov. Løsningen skal passe til din virksomhed her og nu og kan udvides, når din virksomhed vokser.",
       reverse: false,
       sectionId: "skraeddersyede-losninger" },
     { imageSrc: optimering, imageAlt: "placeholder", title: "Performanceoptimering", 
-      textBefore: "Når det overflødige skæres væk, bliver dit website automatisk lettere og performer bedre. Dertil kommer billed-, video- og typografi-optimering, som igen er med til at gøre dit website hurtigere - uden at gå på kompromis med kvaliteten. Vi holder os opdateret på den nyeste teknologi og de bedste værktøjer til at optimere både performance og energiforbrug. Vil du selv i gang? Læs vores ", 
-      linkText: "5 konkrete tips til bedre performance",
+      textBefore: "Performance er en grundsøjle i vores tilgang. Når vi skærer det overflødige væk, bliver dit website automatisk lettere og performer bedre. Vi arbejder bl.a. med billed-, video-, kode- og typografi-optimering. Det forbedrer loadtiden og funktionaliteten, uden at gå på kompromis med kvaliteten. Vi holder os opdaterede på den nyeste teknologi og de bedste værktøjer til at optimere både performance og energiforbrug. Vi tror på, at du som kunde skal have indsigt i det, vi laver. Derfor deler vi også " , 
+      linkText: "konkrete tips til bedre performance",
       linkTo: "/blog/fem-tips",
-      textAfter: ", hvor vi lister tiltag, du straks kan gå i gang med.",
+      textAfter: ", som du straks kan gå i gang med.",
       reverse: true,
 
       sectionId: "optimal-performance" },
     { imageSrc: co2, imageAlt: "placeholder", title: "Reduceret CO2-aftryk", 
-      textBefore: "Klimabevidsthed fylder i arbejdstilgangen hos Resurge, og performance- og CO2-optimering går heldigvis hånd i hånd. Et website vil per definition aldrig blive bæredygtigt, og man siger, at det eneste bæredygtige website er et website, som ikke eksisterer. Med det i mente tror vi, at det mindst bæredygtige website er et website, som ikke opfylder dets formål. Derfor er det vores topprioritet at skabe effektive webløsninger, som skaber værdi for virksomheder og deres kunder. Samtidig arbejder vi aktivt med at gøre websites mindre datatunge for at opnå en bedre brugeroplevelse, højere performance og et mindre CO2-aftryk. Du finder konkrete råd i vores ",
+      textBefore: "Hos Resurge er klimabevidsthed en integreret del af vores arbejde. Performance- og CO2-optimering går hånd i hånd, og selvom websites bruger energi og ikke kan være fuldt ud bæredygtige, mener vi, at vi har et ansvar for at gøre dem så lette og effektive som muligt.  Netop derfor skaber vi webløsninger, der både performer godt og skaber reel værdi for virksomheder og deres kunder. For os hænger ansvarlighed og effektivitet tæt sammen: Når vi forbedrer din performance og samtidig reducerer ressourceforbruget, så er det en win-win. Som en del af den tilgang deler vi også praktisk viden og værktøjer, så du selv kan træffe bedre valg. Find konkrete råd i vores ",
       linkText: "guides til bedre performance og lavere CO2-aftryk",
       linkTo: "/blog",
-      textAfter: ", hvor vi deler praktisk viden og værktøjer.",
       reverse: false,
       sectionId: "lavere-co2-aftryk" },
     
