@@ -42,9 +42,6 @@ function ForsideView() {
           <h1 className="absolute inset-auto text-center text-[8vw] uppercase font-light">Rethink. Refine.<br />Resurge.</h1>
           <img src={heroImage} alt="Rethink. Refine. Resurge."/>
         </div>
-        <Container>
-          {/* <h1 className="font-h1 font-medium my-[105px]">Resurge</h1> */}
-        </Container>
 
         <Container>
           <div className="flex justify-start items-start w-full max-w-[1102px] mx-auto my-12 md:my-12 px-4 sm:px-6 md:px-0 flex-col gap-[65px] md:gap-[105px]">
